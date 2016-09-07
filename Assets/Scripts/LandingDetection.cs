@@ -23,6 +23,7 @@ public class LandingDetection : MonoBehaviour {
             else
                 manager.endLanded = true;
 
+            manager.platformPoints = other.GetComponent<PlatformManager>().pointValue; //sets the point value in the manager
         }
     }
 

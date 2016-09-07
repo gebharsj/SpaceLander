@@ -30,10 +30,10 @@ public class ShipControls : MonoBehaviour
         //--------------Gets Speed and adds an amount of force based upon thrust power-----------
         if (Input.GetKey(KeyCode.Space))
         {
-            if (_fuelConsumption.fuelAmount > 0)
-            {                                                                                           // Check if there is enough fuel for thrusters
+            if (_fuelConsumption.fuelAmount > 0)  // Check if there is enough fuel for thrusters
+            {                                        
                 this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 10f * thrustPower));
-                _fuelConsumption.fuelTank();                                                            // Fuel is deprecated while the space bar is down
+                _fuelConsumption.FuelTank();   // Fuel is deprecated while the space bar is down
             }
             else
             {

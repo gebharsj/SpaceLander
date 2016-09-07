@@ -5,7 +5,6 @@ public class WindConditions : MonoBehaviour
     public float windSpeed; //the wind speed. Make it negative for left. Positive for right
     public GameObject wind; // the temporary wind that animates;
     private GameObject player; //the player
-                               // Use this for initialization
 
     private void Start()
     {
@@ -24,8 +23,14 @@ public class WindConditions : MonoBehaviour
     }
 
     // Update is called once per frame
-    private void Update()
+    //private void Update()
+    //{
+    //     player.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * windSpeed, 0)); // adding force to the player
+    //}
+
+    void OnTriggerStay2D(Collider2D other)
     {
-        player.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * windSpeed, 0)); // adding force to the player
+        if (other.gameObject == player)
+            player.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * windSpeed, 0)); // adding force to the player
     }
 }

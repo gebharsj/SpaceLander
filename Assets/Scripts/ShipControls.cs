@@ -2,14 +2,18 @@
 
 public class ShipControls : MonoBehaviour
 {
+    [Tooltip("Speed left or right.")]
     public float horizontalSpeed;                                       //left and right speed
+    [Tooltip("Power of the thrust")]
     public float thrustPower;                                           //force for thrust
 
-    private FuelConsumption _fuelConsumption;                           // Fuel is updated through this script.
-
-    private void Start()
+    FuelConsumption fuel;                                               //instance of fuel
+    void Start()
     {
-        _fuelConsumption = gameObject.GetComponent<FuelConsumption>();                                  // Initialize the FuelConsumption Script
+        fuel = GetComponent<FuelConsumption>();                          //get instance of fuel
+
+        if (fuel == null)
+            Debug.LogError("Fuel is not attached to the player.");
     }
 
     // Update is called once per frame
@@ -30,10 +34,10 @@ public class ShipControls : MonoBehaviour
         //--------------Gets Speed and adds an amount of force based upon thrust power-----------
         if (Input.GetKey(KeyCode.Space))
         {
-            if (_fuelConsumption.fuelAmount > 0)  // Check if there is enough fuel for thrusters
+            if (FuelConsumption.fuelAmount > 0)  // Check if there is enough fuel for thrusters
             {                                        
                 this.GetComponent<Rigidbody2D>().AddForce(new Vector2(0, 10f * thrustPower));
-                _fuelConsumption.FuelTank();   // Fuel is deprecated while the space bar is down
+                fuel.FuelTank();   // Fuel is deprecated while the space bar is down
             }
             else
             {

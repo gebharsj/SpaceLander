@@ -888,7 +888,7 @@ Prefab:
     - target: {fileID: 114000013659260502, guid: ba9190f9eaed44648929b42656b7a1af,
         type: 2}
       propertyPath: pointValue
-      value: 10
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ba9190f9eaed44648929b42656b7a1af, type: 2}
@@ -1163,6 +1163,21 @@ Prefab:
       propertyPath: m_TagString
       value: Front
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011888624560, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: thrustPower
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011888624560, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: horizontalSpeed
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011262015946, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: animationDelay
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8aaae5a226be94598205535f1d9720, type: 2}
   m_IsPrefabParent: 0
@@ -1179,11 +1194,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1542899919}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8a25ca9b59f563d46b6fed4a71c3a95f, type: 3}
+  m_Script: {fileID: 11500000, guid: bcaf3ad2baeaeca499b609365d081857, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   fuelStartAmount: 30
-  fuelAmount: 30
   fuelCost: 0.2
   fuelCostDivider: 2
 --- !u!114 &1542899921
@@ -1304,7 +1318,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windSpeed: 2
-  wind: {fileID: 1000011376207764, guid: 7264ebf499e73af4dac04bc700ddbdfe, type: 2}
 --- !u!61 &1853866070
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1412,7 +1425,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   windSpeed: -5
-  wind: {fileID: 1000011376207764, guid: 7264ebf499e73af4dac04bc700ddbdfe, type: 2}
 --- !u!61 &2013951438
 BoxCollider2D:
   m_ObjectHideFlags: 0

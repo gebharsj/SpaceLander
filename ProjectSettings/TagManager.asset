@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Landing
   - Front
+  - DeathZone
   layers:
   - Default
   - TransparentFX

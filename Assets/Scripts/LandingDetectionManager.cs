@@ -13,7 +13,7 @@ public class LandingDetectionManager : MonoBehaviour
     [HideInInspector]
     public int platformPoints; //the points coming from the paltform you're landing
 
-    private bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
+    public static bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
 
     // Update is called once per frame
     private void Update()
@@ -38,6 +38,7 @@ public class LandingDetectionManager : MonoBehaviour
     {
         if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.y) > maxLandingSpeed) //if speed is greater...
         {
+            hasFinished = true;
             Debug.LogError("WE'VE Crashed!");
             this.GetComponent<SpriteRenderer>().color = new Color32(255, 0, 0, 255);
         }

@@ -10,6 +10,7 @@ public class SpeedometerHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
+        player = GameObject.FindGameObjectWithTag("Player");
         if(player == null)
         {
             Debug.LogError("Player has not been set!");
@@ -24,12 +25,6 @@ public class SpeedometerHandler : MonoBehaviour {
             Debug.LogError("SpeedText has not been set!");
         }      
 	}
-	
-	// Update is called once per frame
-	void Update ()
-    {
-        
-    }
 
     void FixedUpdate()
     {

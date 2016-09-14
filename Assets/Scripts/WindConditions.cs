@@ -2,9 +2,10 @@
 
 public class WindConditions : MonoBehaviour
 {
-    public float windSpeed; //the wind speed. Make it negative for left. Positive for right
-    public GameObject wind; // the temporary wind that animates;
-    private GameObject player; //the player
+    [Tooltip("Negative is left. Positive is right.")]
+    public float windSpeed;             //the wind speed. Make it negative for left. Positive for right
+    private GameObject wind;             // the temporary wind that animates;
+    private GameObject player;          //the player
 
     private void Start()
     {
@@ -21,12 +22,6 @@ public class WindConditions : MonoBehaviour
         //else
         //    wind.GetComponent<Animator>().SetBool("isWind", false);
     }
-
-    // Update is called once per frame
-    //private void Update()
-    //{
-    //     player.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * windSpeed, 0)); // adding force to the player
-    //}
 
     void OnTriggerStay2D(Collider2D other)
     {

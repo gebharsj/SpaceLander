@@ -5,6 +5,7 @@ public class PointsManager : MonoBehaviour
 {
     public static int totalPoints; // the total points
 
+    [Tooltip("Text for the points.")]
     public Text pointsText; //the text for the points
 
     private string pointsHeader; //saving whatever you write in the text beforehand

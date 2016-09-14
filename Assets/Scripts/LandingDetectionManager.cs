@@ -3,8 +3,9 @@ using System.Collections;
 
 public class LandingDetectionManager : MonoBehaviour
 {
+    [Tooltip("What speed does a ship crash at.")]
     public float maxLandingSpeed;   //over what speed does a ship crash at
-
+    [Tooltip("Delay for the ship to reset after crashing.")]
     public float animationDelay;    //delay for animation to play
 
     [HideInInspector]
@@ -32,9 +33,9 @@ public class LandingDetectionManager : MonoBehaviour
             {
                 Debug.Log("YOU'VE LANDED!");
                 PointsManager.AddPoints(platformPoints);                                    // add the points of the platform
-                int fuelRemaining = (int) this.GetComponent<FuelConsumption>().fuelAmount;  //get points for fuel
+                int fuelRemaining = (int) FuelConsumption.fuelAmount;                       // get points for fuel
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
-                hasFinished = true;
+                hasFinished = true;                                                         
             }
         }
     }
@@ -44,7 +45,7 @@ public class LandingDetectionManager : MonoBehaviour
         if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.y) > maxLandingSpeed)   //if speed is greater...
         {
             Debug.LogError("WE'VE Crashed!");
-            this.GetComponent<SpriteRenderer>().color = Color.red;
+            this.GetComponent<SpriteRenderer>().color = Color.red;              //visual change
             hasFinished = true;                                                 //prevents score from being added
 
             StartCoroutine(DeathDelay());    
@@ -58,7 +59,7 @@ public class LandingDetectionManager : MonoBehaviour
             isDelayed = true;                                                   //prevents delay from happening twice
             GetComponent<ShipControls>().enabled = false;                       //prevents player from moving when crashed
             yield return new WaitForSeconds(animationDelay);                    //delay for animation
-            GetComponent<DeathManager>().DeathActions();                        //DEATH OCCURS
+            DeathManager.DeathActions();                                        //DEATH OCCURS
             GetComponent<ShipControls>().enabled = true;                        //reset controls
             isDelayed = false;                                                  //allows delay to happen again
         }

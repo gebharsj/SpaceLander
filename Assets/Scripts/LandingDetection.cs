@@ -16,10 +16,10 @@ public class LandingDetection : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag.Equals("Landing")) // Looks to see if it has hit the landing pad
+        if (other.tag.Equals("Landing"))                // Looks to see if it has hit the landing pad
         {
-            if (this.tag.Equals("Front"))// figures out if it is the front or the back
-                manager.frontLanded = true; //turns the bool on
+            if (this.tag.Equals("Front"))               // figures out if it is the front or the back
+                manager.frontLanded = true;             //turns the bool on
             else
                 manager.endLanded = true;
 
@@ -29,10 +29,10 @@ public class LandingDetection : MonoBehaviour {
 
     void OnTriggerExit2D(Collider2D other)
     {
-        if (other.tag.Equals("Landing")) // Looks to see if it have left the landing pad
+        if (other.tag.Equals("Landing"))                // Looks to see if it have left the landing pad
         {
-            if (this.tag.Equals("Front")) // figures out if it is the front or the back
-                manager.frontLanded = false; //turns the bool off
+            if (this.tag.Equals("Front"))               // figures out if it is the front or the back
+                manager.frontLanded = false;            //turns the bool off
             else
                 manager.endLanded = false;
         }

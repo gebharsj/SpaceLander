@@ -3,42 +3,31 @@ using System.Collections;
 
 public class PauseGame : MonoBehaviour {
 
+    [Tooltip("The pause menu")]
     public GameObject pauseMenu;
+    [Tooltip("The pause button")]
+    public GameObject pauseButton;
+
     bool paused = false;
 
-    void Start()
-    {
-        Time.timeScale = 1;
-    }
-
-    void Update()
-    {
-        //toggles the pause menu gameobject
-        if (Input.GetKeyUp(KeyCode.Escape))
-        {
-            paused = togglePause();
-            if (paused)
-            {
-                pauseMenu.SetActive(true);
-            }
-            else
-            {
-                pauseMenu.SetActive(false);
-            }
-        }
-    }
-
-    bool togglePause()      //Sets the time scale to pause the game
+    bool TogglePause()                  //Sets the time scale to pause the game
     {
         if (Time.timeScale == 0) 
         {
-            Time.timeScale = 1;     //unpauses game
+            Time.timeScale = 1;         //unpauses game
             return (false);
         }
         else
         {
-            Time.timeScale = 0;     //pauses game
+            Time.timeScale = 0;         //pauses game
             return (true);
         }
+    }
+
+    public void ToggleMenu()            //Activates/deactivates UI elements based on whether or not the game is paused
+    {
+        paused = TogglePause();
+        pauseButton.SetActive(!paused);
+        pauseMenu.SetActive(paused);
     }
 }

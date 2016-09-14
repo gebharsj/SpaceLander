@@ -11,6 +11,7 @@ public class AudioControl : MonoBehaviour {
     void Start()
     {
         SetVolumeText();
+        SetVolumeValue();
     }
 
     // Update is called once per frame
@@ -22,14 +23,19 @@ public class AudioControl : MonoBehaviour {
     public void SetVolume(string prefName)
     {
         SetVolumeText();
-        PlayerPrefs.SetFloat(prefName, volumeSlider.value);
+        SetVolumeValue();
     }
 
     public void Mute(string prefName)
     {
         volumeSlider.value = 0;
         SetVolumeText();
-        PlayerPrefs.SetFloat(prefName, volumeSlider.value);
+        SetVolumeValue();
+    }
+
+    void SetVolumeValue()
+    {
+        VolumeHandler.volumeValue = volumeSlider.value;
     }
 
     void SetVolumeText()

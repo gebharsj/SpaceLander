@@ -6,6 +6,8 @@ public class VolumeHandler : MonoBehaviour {
     public AudioSource uISource;
     public AudioSource musicSource;
 
+    public static float volumeValue;
+
     public string volume;
 
     // Use this for initialization
@@ -17,7 +19,7 @@ public class VolumeHandler : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        uISource.volume = PlayerPrefs.GetFloat(volume);
-        musicSource.volume = PlayerPrefs.GetFloat(volume);
+        uISource.volume = volumeValue;
+        musicSource.volume = volumeValue;
     }
 }

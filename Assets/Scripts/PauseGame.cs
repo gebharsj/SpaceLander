@@ -10,6 +10,19 @@ public class PauseGame : MonoBehaviour {
 
     bool paused = false;
 
+    void Start()
+    {
+        if(pauseMenu == null)
+        {
+            Debug.LogError("PauseMenu has not been set!");
+        }
+
+        if (pauseButton == null)
+        {
+            Debug.LogError("PauseButton has not been set!");
+        }
+    }
+
     bool TogglePause()                  //Sets the time scale to pause the game
     {
         if (Time.timeScale == 0) 

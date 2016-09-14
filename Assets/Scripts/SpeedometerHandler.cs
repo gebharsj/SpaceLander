@@ -10,7 +10,19 @@ public class SpeedometerHandler : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        shipRB = player.GetComponent<Rigidbody2D>();        //Cache reference to player's rigidbody
+        if(player == null)
+        {
+            Debug.LogError("Player has not been set!");
+        }
+        else
+        {
+            shipRB = player.GetComponent<Rigidbody2D>();        //Cache reference to player's rigidbody
+        }  
+        
+        if(speedText == null)
+        {
+            Debug.LogError("SpeedText has not been set!");
+        }      
 	}
 	
 	// Update is called once per frame

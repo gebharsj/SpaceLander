@@ -10,6 +10,16 @@ public class AudioControl : MonoBehaviour {
     // Use this for initialization
     void Start()
     {
+        if(volumeSlider == null)
+        {
+            Debug.LogError("VolumeSlider has not been set!");
+        }
+
+        if(volumeText == null)
+        {
+            Debug.LogError("VolumeText has not been set!");
+        }
+
         SetVolumeText();
         SetVolumeValue();
     }

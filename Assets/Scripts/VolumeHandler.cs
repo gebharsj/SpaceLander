@@ -8,12 +8,18 @@ public class VolumeHandler : MonoBehaviour {
 
     public static float volumeValue;
 
-    public string volume;
-
     // Use this for initialization
     void Start()
     {
+        if(uISource == null)
+        {
+            Debug.LogError("UI Source has not been set!");
+        }
 
+        if(musicSource == null)
+        {
+            Debug.LogError("Music Source has not been set!");
+        }
     }
 
     // Update is called once per frame

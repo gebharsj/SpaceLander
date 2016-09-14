@@ -24,12 +24,6 @@ public class AudioControl : MonoBehaviour {
         SetVolumeValue();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
-
     public void SetVolume(string prefName)
     {
         SetVolumeText();

@@ -40,7 +40,7 @@ GameObject:
   - 61: {fileID: 61000011821435454}
   m_Layer: 0
   m_Name: FrontEnd
-  m_TagString: Untagged
+  m_TagString: Front
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -58,9 +58,11 @@ GameObject:
   - 61: {fileID: 61000013478447432}
   - 114: {fileID: 114000011888624560}
   - 114: {fileID: 114000011262015946}
+  - 114: {fileID: 114000014150919316}
+  - 114: {fileID: 114000011371242408}
   m_Layer: 0
   m_Name: Ship
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -117,12 +119,12 @@ Rigidbody2D:
   m_Mass: 1
   m_LinearDrag: 0
   m_AngularDrag: 0.05
-  m_GravityScale: 1
+  m_GravityScale: 0.1
   m_IsKinematic: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!61 &61000011821435454
 BoxCollider2D:
   m_ObjectHideFlags: 1
@@ -176,9 +178,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cec2d679f8937946b611c428f88f64f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLandingSpeed: 0
+  maxLandingSpeed: 10
+  animationDelay: 2
   frontLanded: 0
   endLanded: 0
+  platformPoints: 0
+--- !u!114 &114000011371242408
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014219466956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0850cb53e71b7f547a6372ed8a82088a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startPosition: {fileID: 0}
 --- !u!114 &114000011888624560
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -214,6 +230,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa9864bc99ac3364ea7de6c64fc9370e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &114000014150919316
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000014219466956}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bcaf3ad2baeaeca499b609365d081857, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fuelStartAmount: 30
+  fuelCost: 0.2
+  fuelCostDivider: 2
 --- !u!212 &212000011484551084
 SpriteRenderer:
   m_ObjectHideFlags: 1

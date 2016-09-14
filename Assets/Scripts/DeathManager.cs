@@ -18,6 +18,10 @@ public class DeathManager : MonoBehaviour {
         if (player == null)
             Debug.LogError("There is no one tagged \"Player\".");
 
+        startPosition = GameObject.Find("StartPoint").GetComponent<Transform>();
+        if (startPosition == null)
+            Debug.LogError("Cannot find the startPosition");
+
         realStart = new Vector3(startPosition.position.x, startPosition.position.y, player.transform.position.z); //convert the transform to vector3
 	}
 

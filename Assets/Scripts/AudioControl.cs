@@ -1,0 +1,45 @@
+﻿using UnityEngine;
+using UnityEngine.UI;
+using System.Collections;
+
+public class AudioControl : MonoBehaviour {
+
+    public Slider volumeSlider;
+    public Text volumeText;
+
+    // Use this for initialization
+    void Start()
+    {
+        SetVolumeText();
+        SetVolumeValue();
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
+
+    public void SetVolume(string prefName)
+    {
+        SetVolumeText();
+        SetVolumeValue();
+    }
+
+    public void Mute(string prefName)
+    {
+        volumeSlider.value = 0;
+        SetVolumeText();
+        SetVolumeValue();
+    }
+
+    void SetVolumeValue()
+    {
+        VolumeHandler.volumeValue = volumeSlider.value;
+    }
+
+    void SetVolumeText()
+    {
+        volumeText.text = "<b><i><color=purple><size=" + ((volumeSlider.value + 1) * 100).ToString() + ">Volume!</size></color></i></b>";
+    }
+}

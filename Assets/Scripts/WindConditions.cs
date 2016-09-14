@@ -7,12 +7,18 @@ public class WindConditions : MonoBehaviour
     private GameObject wind;             // the temporary wind that animates;
     private GameObject player;          //the player
 
+    private PopUp popUpFinished;
+    // Use this for initialization
     private void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player");
+        popUpFinished = GameObject.Find("PopUp").GetComponent<PopUp>();                                 // Find the PopUp script
+        if (popUpFinished == null)
+            Debug.LogError("There is no reference to the PopUp script to check");
 
+        player = GameObject.FindGameObjectWithTag("Player");
         if (player == null)
             Debug.LogError("No one is tagged \"Player\". Make sure the player is tagged correctly");
+        
 
         //------------=========Animation for wind========-------------------------------
         //if (windSpeed > 0)
@@ -25,7 +31,7 @@ public class WindConditions : MonoBehaviour
 
     void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject == player)
+        if (other.gameObject == player && popUpFinished.startLevel)
             player.GetComponent<Rigidbody2D>().AddForce(new Vector2(1f * windSpeed, 0)); // adding force to the player
     }
 }

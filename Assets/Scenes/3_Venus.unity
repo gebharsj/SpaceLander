@@ -349,6 +349,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e30a7a457b6b184693e099e1460e3ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &571500281 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014289573790, guid: 6e30a7a457b6b184693e099e1460e3ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 571500280}
 --- !u!1 &880379919 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1000014219466956, guid: ee8aaae5a226be94598205535f1d9720,
@@ -460,6 +465,11 @@ Prefab:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 119918630}
+    - target: {fileID: 114000011262015946, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: question
+      value: 
+      objectReference: {fileID: 571500281}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8aaae5a226be94598205535f1d9720, type: 2}
   m_IsPrefabParent: 0

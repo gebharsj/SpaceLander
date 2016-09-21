@@ -182,6 +182,7 @@ MonoBehaviour:
   animationDelay: 2
   frontLanded: 0
   endLanded: 0
+  question: {fileID: 0}
   platformPoints: 0
 --- !u!114 &114000011371242408
 MonoBehaviour:

@@ -7,6 +7,7 @@ TagManager:
   - Landing
   - Front
   - DeathZone
+  - GameManager
   layers:
   - Default
   - TransparentFX

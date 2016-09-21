@@ -3628,6 +3628,11 @@ Prefab:
       propertyPath: pointsText
       value: 
       objectReference: {fileID: 578516008}
+    - target: {fileID: 82000010714032050, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 2ca5065e26be693449aabdc9ce0108d9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0

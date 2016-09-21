@@ -5,6 +5,8 @@ public class LandingDetection : MonoBehaviour {
 
     LandingDetectionManager manager; // the script that manages the other two
 
+    static GameObject platform; //saving the platform to a gameObject
+
 	// Use this for initialization
 	void Start ()
     {
@@ -31,10 +33,19 @@ public class LandingDetection : MonoBehaviour {
     {
         if (other.tag.Equals("Landing"))                // Looks to see if it have left the landing pad
         {
+            if (manager.endLanded && manager.frontLanded)
+            {
+                if (other.isTrigger)                    // Check if the collider is a trigger
+                {
+                    other.enabled = false;              // if so, turn off the trigger
+                    LandingDetectionManager.hasFinished = false;        // the level is not finished
+                }
+            }
             if (this.tag.Equals("Front"))               // figures out if it is the front or the back
                 manager.frontLanded = false;            //turns the bool off
             else
                 manager.endLanded = false;
         }
-    }
+
+    }    
 }

@@ -7,6 +7,11 @@ TagManager:
   - Landing
   - Front
   - DeathZone
+  - Answer1
+  - Answer2
+  - Answer3
+  - Answer4
+  - Landed
   layers:
   - Default
   - TransparentFX

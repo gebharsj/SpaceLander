@@ -17,7 +17,7 @@ public class LandingDetectionManager : MonoBehaviour
     public GameObject question;     // Needs to be public because inactive gameObjects cannot be "found"
 
     [HideInInspector]
-    public int platformPoints;      //the points coming from the paltform you're landing
+    public int platformPoints;      //the points coming from the platform you're landing
 
     public static bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
 

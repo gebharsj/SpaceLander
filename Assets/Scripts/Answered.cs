@@ -5,15 +5,23 @@ using UnityEngine.SceneManagement;
 public class Answered : MonoBehaviour {
 
     private QPopUp question;                            // Reference the Question pop up script
+    private FuelConsumption fuel;
 
     void Start() {
         question = GameObject.Find("Canvas").GetComponent<QPopUp>();        // Find the script
+        fuel = GameObject.FindGameObjectWithTag("Player").GetComponent<FuelConsumption>();
     }
 
     public void Answer() {
         if (gameObject.name == "Answer 1")                                  // Find the correct answer... will be a variable
         {
             print("This is the correct answer");                            // Test for now.. will turn green
+            FuelConsumption.fuelAmount += fuel.platformAddition;            // adds the amount of fuel dictated
+
+            if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max
+                FuelConsumption.fuelAmount = fuel.fuelStartAmount;
+
+            fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
         }
         else {
             print("This is the wrong answer");                              // All wrong answers will turn red
@@ -36,5 +44,7 @@ public class Answered : MonoBehaviour {
 
     public void NextLevel() {
         SceneManager.LoadScene(1);                                          // Load the next scene (loads game atm)
+        PopUp.secondTime = false;
+        PointsManager.savedPoints = PointsManager.totalPoints;             //saves the points, can't lose them
     }
 }

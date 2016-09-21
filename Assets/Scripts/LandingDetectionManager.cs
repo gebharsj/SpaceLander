@@ -36,6 +36,7 @@ public class LandingDetectionManager : MonoBehaviour
 
         if (frontLanded && endLanded) //when both points have landed
         {
+            print(hasFinished);
             if (!hasFinished)                                                                //activate win condition once
             {
                 Debug.Log("YOU'VE LANDED!");
@@ -55,21 +56,10 @@ public class LandingDetectionManager : MonoBehaviour
         {
             Debug.LogError("WE'VE Crashed!");
             hasFinished = true;                                                 //prevents score from being added
+            frontLanded = false;                                                //resets the landed bools
+            endLanded = false;                                                  //resets the landed bools
 
-            StartCoroutine(DeathDelay());    
-        }
-    }
-
-    IEnumerator DeathDelay()
-    {
-        if (!isDelayed)
-        {
-            isDelayed = true;                                                   //prevents delay from happening twice
-            GetComponent<ShipControls>().enabled = false;                       //prevents player from moving when crashed
-            yield return new WaitForSeconds(animationDelay);                    //delay for animation
             DeathManager.DeathActions();                                        //DEATH OCCURS
-            GetComponent<ShipControls>().enabled = true;                        //reset controls
-            isDelayed = false;                                                  //allows delay to happen again
         }
     }
 }

@@ -33,11 +33,15 @@ public class LandingDetection : MonoBehaviour {
         {
             if (manager.endLanded && manager.frontLanded)
             {
+                print("OVER THERE");
                 if (other.isTrigger)                    // Check if the collider is a trigger
                 {
                     other.enabled = false;              // if so, turn off the trigger
                     LandingDetectionManager.hasFinished = false;        // the level is not finished
+                    print("here");
                 }
+                else
+                    print(other.name);
             }
             if (this.tag.Equals("Front"))               // figures out if it is the front or the back
                 manager.frontLanded = false;            //turns the bool off

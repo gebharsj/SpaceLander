@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.SceneManagement;
 
 public class DeathManager : MonoBehaviour {
 
@@ -10,9 +11,16 @@ public class DeathManager : MonoBehaviour {
 
     static GameObject player;              //player, since there's only one
 
-	// Use this for initialization
-	void Start ()
+    private static bool isDelayed;         //checking if delay is happening
+
+    public int animationDelay;             //
+
+    private static int staticDelay;
+
+    // Use this for initialization
+    void Start ()
     {
+        staticDelay = animationDelay;
         player = GameObject.FindGameObjectWithTag("Player");                                                       //find player
 
         if (player == null)
@@ -35,12 +43,23 @@ public class DeathManager : MonoBehaviour {
 
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
-        FuelConsumption.ResetFuel();                                //reset fuel
-        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero; //reset speed
-        player.transform.position = realStart;                      //reset position
-        PointsManager.totalPoints = 0;                              //reset score
-        LandingDetectionManager.hasFinished = false;                //reset  ability to score
-        //play death animation
+        player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
+        SceneManager.LoadScene(1);
+    }
+
+    static IEnumerator DeathDelay()
+    {
+        if (!isDelayed)
+        {
+            isDelayed = true;                                                   //prevents delay from happening twice
+            player.GetComponent<ShipControls>().enabled = false;                //prevents player from moving when crashed
+            yield return new WaitForSeconds(staticDelay);                       //delay for animation
+
+            PointsManager.totalPoints = PointsManager.savedPoints;              //resets the points to the last level
+
+            player.GetComponent<ShipControls>().enabled = true;                 //reset controls
+            isDelayed = false;                                                  //allows delay to happen again
+        }
     }
 }
 

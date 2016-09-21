@@ -5,7 +5,6 @@ TagManager:
   serializedVersion: 2
   tags:
   - Landing
-  - Front
   - DeathZone
   - GameManager
   - Answer1
@@ -13,6 +12,8 @@ TagManager:
   - Answer3
   - Answer4
   - Landed
+  - Answer0
+  - Answer
   layers:
   - Default
   - TransparentFX

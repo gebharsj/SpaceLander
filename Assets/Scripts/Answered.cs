@@ -28,7 +28,6 @@ public class Answered : MonoBehaviour {
         }
 
         question.WasAnswered();                                             // Enable the next buttons
-
     }
 
     public void ContinuePlaying() {

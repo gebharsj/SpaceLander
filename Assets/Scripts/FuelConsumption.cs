@@ -15,6 +15,7 @@ public class FuelConsumption : MonoBehaviour
     public float platformAddition = 20f;            //The amount of fuel that platforms adds
 
     public Text fuelText;                           //The text for the fuel
+    public Image fuelImage;                         //The image for the fuel
     void Start()
     {
         savedStartAmount = fuelStartAmount;         //saving fuel to a static var
@@ -28,6 +29,8 @@ public class FuelConsumption : MonoBehaviour
     public float FuelTank()
     {                       // The current amount of fuel
         fuelText.text = "Fuel: " + fuelAmount.ToString();
+
+        fuelImage.fillAmount = fuelAmount;
 
         if (fuelAmount > 0)
         {

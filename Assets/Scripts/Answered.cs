@@ -34,7 +34,7 @@ public class Answered : MonoBehaviour {
         gameObject.transform.parent.gameObject.SetActive(false);            // Set the Pop up inactive
     }
 
-    public void NextLevel() {
-        SceneManager.LoadScene(1);                                          // Load the next scene (loads game atm)
+    public void NextLevel(int nextLevelNum) {
+        SceneManager.LoadScene(nextLevelNum);                                          // Load the next scene (loads game atm)
     }
 }

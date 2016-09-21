@@ -38,10 +38,13 @@ public class LandingDetection : MonoBehaviour {
                     other.enabled = false;              // if so, turn off the trigger
                     LandingDetectionManager.hasFinished = false;        // the level is not finished
                 }
+                else
+                    print(other.name);
             }
-            if (this.tag.Equals("Front"))               // figures out if it is the front or the back
+
+            //if (this.tag.Equals("Front"))               // figures out if it is the front or the back
                 manager.frontLanded = false;            //turns the bool off
-            else
+            //else
                 manager.endLanded = false;
         }
 

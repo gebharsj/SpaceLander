@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class FuelConsumption : MonoBehaviour
 {
@@ -10,6 +11,10 @@ public class FuelConsumption : MonoBehaviour
     public float fuelCost = 0.2f;                   // Fuel cost while the thrusters are active
     [Tooltip("What the fuel cost is divided by, in order to avoid increasingly low decimals.")]
     public float fuelCostDivider = 2.0f;            // What the fuel cost is divided by, in order to avoid increasingly low decimals
+    [Tooltip("The amount of fuel that platforms adds")]
+    public float platformAddition = 20f;            //The amount of fuel that platforms adds
+
+    public Text fuelText;                           //The text for the fuel
     void Start()
     {
         savedStartAmount = fuelStartAmount;         //saving fuel to a static var
@@ -22,6 +27,8 @@ public class FuelConsumption : MonoBehaviour
 
     public float FuelTank()
     {                       // The current amount of fuel
+        fuelText.text = "Fuel: " + fuelAmount.ToString();
+
         if (fuelAmount > 0)
         {
             fuelAmount -= fuelCost / fuelCostDivider;       // Fuel is deprecated by the Fuel Used / fuelCostDivider

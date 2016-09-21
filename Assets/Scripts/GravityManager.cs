@@ -6,7 +6,7 @@ public class GravityManager : MonoBehaviour
 
     private void Update()
     {
-            UpdateGravity(gravityForce);
+        UpdateGravity(gravityForce);
     }
 
     public void UpdateGravity(float newGravity)                         //allows you to adjust the gravity in a different script

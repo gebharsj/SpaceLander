@@ -8,10 +8,10 @@ public class LandingDetectionManager : MonoBehaviour
     [Tooltip("Delay for the ship to reset after crashing.")]
     public float animationDelay;    //delay for animation to play
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool frontLanded;        //the bool connected with the front
 
-    [HideInInspector]
+    //[HideInInspector]
     public bool endLanded;          // the bool connected with the back
 
     public GameObject question;     // Needs to be public because inactive gameObjects cannot be "found"
@@ -56,21 +56,12 @@ public class LandingDetectionManager : MonoBehaviour
         {
             Debug.LogError("WE'VE Crashed!");
             hasFinished = true;                                                 //prevents score from being added
+            frontLanded = false;                                                //resets the landed bools
+            endLanded = false;                                                  //resets the landed bools
 
-            StartCoroutine(DeathDelay());    
-        }
-    }
+            print("BYE");
 
-    IEnumerator DeathDelay()
-    {
-        if (!isDelayed)
-        {
-            isDelayed = true;                                                   //prevents delay from happening twice
-            GetComponent<ShipControls>().enabled = false;                       //prevents player from moving when crashed
-            yield return new WaitForSeconds(animationDelay);                    //delay for animation
             DeathManager.DeathActions();                                        //DEATH OCCURS
-            GetComponent<ShipControls>().enabled = true;                        //reset controls
-            isDelayed = false;                                                  //allows delay to happen again
         }
     }
 }

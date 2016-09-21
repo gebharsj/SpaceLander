@@ -5,8 +5,6 @@ public class LandingDetection : MonoBehaviour {
 
     LandingDetectionManager manager; // the script that manages the other two
 
-    static GameObject platform; //saving the platform to a gameObject
-
 	// Use this for initialization
 	void Start ()
     {

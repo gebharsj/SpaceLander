@@ -22,8 +22,12 @@ public class LandingDetectionManager : MonoBehaviour
     public static bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
 
     private bool isDelayed;         //checking if delay is happening
-    
 
+    private void Start()
+    {
+        hasFinished = false;
+    }
+    
     // Update is called once per frame
     private void Update()
     {

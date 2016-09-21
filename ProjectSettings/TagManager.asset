@@ -8,6 +8,11 @@ TagManager:
   - Front
   - DeathZone
   - GameManager
+  - Answer1
+  - Answer2
+  - Answer3
+  - Answer4
+  - Landed
   layers:
   - Default
   - TransparentFX

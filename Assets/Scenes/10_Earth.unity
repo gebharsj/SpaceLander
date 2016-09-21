@@ -286,6 +286,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 504e328483bb0dd48844f7ffae505dc7, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1705088446 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4000013331465004, guid: 504e328483bb0dd48844f7ffae505dc7,
+    type: 2}
+  m_PrefabInternal: {fileID: 1705088445}
 --- !u!82 &1705088447 stripped
 AudioSource:
   m_PrefabParentObject: {fileID: 82000011432854068, guid: 504e328483bb0dd48844f7ffae505dc7,
@@ -334,7 +339,12 @@ Prefab:
         type: 2}
       propertyPath: startPosition
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1705088446}
+    - target: {fileID: 114000011262015946, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: question
+      value: 
+      objectReference: {fileID: 2056610600}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8aaae5a226be94598205535f1d9720, type: 2}
   m_IsPrefabParent: 0
@@ -448,3 +458,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e30a7a457b6b184693e099e1460e3ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2056610600 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014289573790, guid: 6e30a7a457b6b184693e099e1460e3ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 2056610599}

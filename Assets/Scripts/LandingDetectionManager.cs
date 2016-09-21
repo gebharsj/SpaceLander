@@ -14,13 +14,20 @@ public class LandingDetectionManager : MonoBehaviour
     [HideInInspector]
     public bool endLanded;          // the bool connected with the back
 
-    private bool isDelayed;         //checking if delay is happening
+    public GameObject question;     // Needs to be public because inactive gameObjects cannot be "found"
 
     [HideInInspector]
-    public int platformPoints;      //the points coming from the paltform you're landing
+    public int platformPoints;      //the points coming from the platform you're landing
 
     public static bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
 
+    private bool isDelayed;         //checking if delay is happening
+
+    private void Start()
+    {
+        hasFinished = false;
+    }
+    
     // Update is called once per frame
     private void Update()
     {
@@ -35,6 +42,8 @@ public class LandingDetectionManager : MonoBehaviour
                 PointsManager.AddPoints(platformPoints);                                    // add the points of the platform
                 int fuelRemaining = (int) FuelConsumption.fuelAmount;                       // get points for fuel
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
+                Time.timeScale = 0;                                                         // Stop time while question is being answered
+                question.SetActive(true);                                                   // Allow pop up to show
                 hasFinished = true;                                                         
             }
         }

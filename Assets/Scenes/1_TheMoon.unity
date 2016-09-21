@@ -226,10 +226,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 1000014219466956, guid: ee8aaae5a226be94598205535f1d9720, type: 2}
-      propertyPath: m_Name
-      value: Ship
-      objectReference: {fileID: 0}
+    - target: {fileID: 114000011262015946, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: question
+      value: 
+      objectReference: {fileID: 1981588885}
     - target: {fileID: 114000011371242408, guid: ee8aaae5a226be94598205535f1d9720,
         type: 2}
       propertyPath: startPosition
@@ -405,6 +406,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e30a7a457b6b184693e099e1460e3ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1981588885 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014289573790, guid: 6e30a7a457b6b184693e099e1460e3ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 1757451509}
 --- !u!1 &2092637128
 GameObject:
   m_ObjectHideFlags: 0

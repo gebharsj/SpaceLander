@@ -195,6 +195,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e30a7a457b6b184693e099e1460e3ed, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &121899672 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1000014289573790, guid: 6e30a7a457b6b184693e099e1460e3ed,
+    type: 2}
+  m_PrefabInternal: {fileID: 121899671}
 --- !u!1001 &620600847
 Prefab:
   m_ObjectHideFlags: 0
@@ -239,6 +244,11 @@ Prefab:
       propertyPath: startPosition
       value: 
       objectReference: {fileID: 1518873310}
+    - target: {fileID: 114000011262015946, guid: ee8aaae5a226be94598205535f1d9720,
+        type: 2}
+      propertyPath: question
+      value: 
+      objectReference: {fileID: 121899672}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ee8aaae5a226be94598205535f1d9720, type: 2}
   m_IsPrefabParent: 0

@@ -3,8 +3,8 @@ using UnityEngine.UI;
 using System.Collections;
 
 public class SpeedometerHandler : MonoBehaviour {
-
-    public GameObject player;       //The player
+    
+    GameObject player;              //The player
     public Text speedText;
     Rigidbody2D shipRB;             //The RigidBody2D on the ship
 
@@ -33,7 +33,7 @@ public class SpeedometerHandler : MonoBehaviour {
 
     void DisplaySpeed()
     {
-        transform.rotation = Quaternion.Euler(0f, 0f, -Mathf.Abs(shipRB.velocity.magnitude * 15));
-        speedText.text = Mathf.Abs(shipRB.velocity.magnitude * 6).ToString();
+        transform.rotation = Quaternion.Euler(0f, 0f, -Mathf.Abs(shipRB.velocity.magnitude));
+        speedText.text = Mathf.Abs(shipRB.velocity.magnitude).ToString();
     }    
 }

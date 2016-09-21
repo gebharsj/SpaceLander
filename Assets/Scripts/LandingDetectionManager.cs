@@ -44,9 +44,7 @@ public class LandingDetectionManager : MonoBehaviour
     {
         if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.y) > maxLandingSpeed)   //if speed is greater...
         {
-            hasFinished = true;
             Debug.LogError("WE'VE Crashed!");
-            this.GetComponent<SpriteRenderer>().color = Color.red;              //visual change
             hasFinished = true;                                                 //prevents score from being added
 
             StartCoroutine(DeathDelay());    

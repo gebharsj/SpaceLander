@@ -15,7 +15,6 @@ public class PopUp : MonoBehaviour {
     }
 
     void Update() {
-
         if (Input.anyKeyDown) {                     // When any key is pressed and let go...
             Time.timeScale = 1;                     // Gravity, force, and controls can be applied.
             gameObject.SetActive(false);            // Disable the gameObject

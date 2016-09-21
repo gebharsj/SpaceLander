@@ -44,6 +44,7 @@ public class LandingDetectionManager : MonoBehaviour
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
                 Time.timeScale = 0;                                                         // Stop time while question is being answered
                 question.SetActive(true);                                                   // Allow pop up to show
+                question.GetComponent<QuestionDisplay>().ApplyText();                       // Use the questions and answers from the txt file.
                 hasFinished = true;                                                         
             }
         }

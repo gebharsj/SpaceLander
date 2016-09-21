@@ -55,6 +55,8 @@ GameObject:
   serializedVersion: 4
   m_Component:
   - 224: {fileID: 224000012079529160}
+  - 222: {fileID: 222000010298770074}
+  - 114: {fileID: 114000013683894030}
   m_Layer: 5
   m_Name: QuestionPopUp
   m_TagString: Untagged
@@ -1033,6 +1035,22 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114000013683894030
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011016546626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c77248933c090494c8fa69fab2ab2338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questionText: {fileID: 114000012690654732}
+  answerOne: {fileID: 0}
+  answerTwo: {fileID: 0}
+  answerThree: {fileID: 0}
+  answerFour: {fileID: 0}
 --- !u!114 &114000013961918594
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1118,6 +1136,12 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Button
+--- !u!222 &222000010298770074
+CanvasRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011016546626}
 --- !u!222 &222000010548130194
 CanvasRenderer:
   m_ObjectHideFlags: 1

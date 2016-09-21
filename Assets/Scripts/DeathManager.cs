@@ -36,7 +36,6 @@ public class DeathManager : MonoBehaviour {
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
         FuelConsumption.ResetFuel();                                //reset fuel
-        player.GetComponent<SpriteRenderer>().color = Color.white;  //reset color
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero; //reset speed
         player.transform.position = realStart;                      //reset position
         PointsManager.totalPoints = 0;                              //reset score

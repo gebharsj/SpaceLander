@@ -1,11 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 using UnityEngine.SceneManagement;
 
 public class Answered : MonoBehaviour {
 
+    public float waitTime;                              //Time to wait before disabling answer buttons
     private QPopUp question;                            // Reference the Question pop up script
     private FuelConsumption fuel;
+
+    bool isWaiting;                                     //bool to make sure the coroutine dosen't run the WaitForSeconds while it's already waiting
 
     void Start() {
         question = GameObject.Find("Canvas").GetComponent<QPopUp>();        // Find the script
@@ -16,6 +20,9 @@ public class Answered : MonoBehaviour {
         if (gameObject.name == "Answer 1")                                  // Find the correct answer... will be a variable
         {
             print("This is the correct answer");                            // Test for now.. will turn green
+            gameObject.GetComponent<Image>().color = Color.green;           // Turns the button Image green. To change the Text color we could do transform.GetComponentInChildren<Text>().color = Color.green;
+            transform.GetComponentInChildren<Text>().color = Color.green;
+            gameObject.GetComponent<Button>().interactable = false;
             FuelConsumption.fuelAmount += fuel.platformAddition;            // adds the amount of fuel dictated
 
             if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max
@@ -25,9 +32,14 @@ public class Answered : MonoBehaviour {
         }
         else {
             print("This is the wrong answer");                              // All wrong answers will turn red
+            gameObject.GetComponent<Image>().color = Color.red;           // Turns the button Image red. To change the Text color we could do transform.GetComponentInChildren<Text>().color = Color.red;
+            transform.GetComponentInChildren<Text>().color = Color.red;
+            gameObject.GetComponent<Button>().interactable = false;
         }
 
-        question.WasAnswered();                                             // Enable the next buttons
+        StartCoroutine(Wait());
+
+        
     }
 
     public void ContinuePlaying() {
@@ -46,5 +58,16 @@ public class Answered : MonoBehaviour {
         PointsManager.savedPoints = PointsManager.totalPoints;             //saves the points, can't lose them
         SceneManager.LoadScene(1);                                          // Load the next scene (loads game atm)
         
+    }
+
+    IEnumerator Wait()
+    {
+        if (!isWaiting)
+        {
+            isWaiting = true;
+            yield return new WaitForSeconds(waitTime);
+            question.WasAnswered();                                             // Enable the next buttons
+            isWaiting = false;
+        }
     }
 }

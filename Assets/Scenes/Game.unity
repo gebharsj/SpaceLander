@@ -1562,6 +1562,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!114 &602004540
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1682,6 +1683,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 0
 --- !u!114 &630986749
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2977,6 +2979,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!114 &1181684751
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3413,6 +3416,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!114 &1307156294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4706,6 +4710,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!114 &1741820587
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4918,6 +4923,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5b55f9d2eb586294f85e738653f3ca9a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!114 &1807879516
 MonoBehaviour:
   m_ObjectHideFlags: 0

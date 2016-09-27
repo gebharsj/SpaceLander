@@ -5577,6 +5577,9 @@ MonoBehaviour:
   fuelCostDivider: 2
   platformAddition: 20
   fuelText: {fileID: 1523391210}
+  fuelImage: {fileID: 948532218}
+  fuelFloat: 0
+  _fillAmount: 0
 --- !u!114 &2046364745
 MonoBehaviour:
   m_ObjectHideFlags: 0

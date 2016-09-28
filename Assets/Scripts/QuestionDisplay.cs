@@ -14,14 +14,16 @@ public class QuestionDisplay : MonoBehaviour {
     TextImportation _textImportation;
 
     public void ApplyText() {
-        _textImportation = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TextImportation>();     
+        _textImportation = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TextImportation>();
 
-        questionText.text = _textImportation.questionList[0].Question;          // Apply the text from the text document
-        answerOne.text = _textImportation.questionList[0].OptionOne;
-        answerTwo.text = _textImportation.questionList[0].OptionTwo;
-        answerThree.text = _textImportation.questionList[0].OptionThree;
-        answerFour.text = _textImportation.questionList[0].OptionFour;
-        answerText = _textImportation.questionList[0].Answer;                   // Establish which is the answer
+        int r = Random.Range(0, 2);
+        print(r);
+        questionText.text = _textImportation.questionList[r].Question;          // Apply the text from the text document
+        answerOne.text = _textImportation.questionList[r].OptionOne;
+        answerTwo.text = _textImportation.questionList[r].OptionTwo;
+        answerThree.text = _textImportation.questionList[r].OptionThree;
+        answerFour.text = _textImportation.questionList[r].OptionFour;
+        answerText = _textImportation.questionList[r].Answer;                   // Establish which is the answer
     }
 }
 

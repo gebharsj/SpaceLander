@@ -12,10 +12,10 @@ public class TextImportation : MonoBehaviour {
     public char breakPoint;
 
 	// Use this for initialization
-	void Start () {
-	    try
+	void Start (){
+        try
         {
-            using (StreamReader sr = new StreamReader("test.txt"))
+            using (StreamReader sr = new StreamReader(textFileName))
             {
                 string line;
 
@@ -23,30 +23,22 @@ public class TextImportation : MonoBehaviour {
                 {
                     string[] temp = line.Split(breakPoint);
 
-                    if(temp.Length == 6)
+                    if(temp.Length == 7)
                     {
                         Questions qt = new Questions();
-                        qt.Question = temp[0];
-                        qt.OptionOne = temp[1];
-                        qt.OptionTwo = temp[2];
-                        qt.OptionThree = temp[3];
-                        qt.OptionFour = temp[4];
-                        qt.Answer = temp[5];
+                        qt.Fact = temp[0];
+                        qt.Question = temp[1];
+                        qt.OptionOne = temp[2];
+                        qt.OptionTwo = temp[3];
+                        qt.OptionThree = temp[4];
+                        qt.OptionFour = temp[5];
+                        qt.Answer = temp[6];
                         questionList.Add(qt);
-
-                        qt.DisplayQuestion();
-
                     }
                     else
                     {
                         Debug.LogError("Your text file has either too much, or too little information!");
                     }
-                    
-
-                    //for (int i = 0; i < temp.Length; i++)
-                    //{
-                    //    Debug.Log(temp[i]);                        
-                    //}
                 }
             }
         }

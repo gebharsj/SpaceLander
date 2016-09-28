@@ -18,6 +18,7 @@ public class QuestionDisplay : MonoBehaviour {
 
     void Awake()
     {
+        hasApplied = false;
         gameManager = GameObject.FindGameObjectWithTag("GameManager");
 
         if (gameManager == null)

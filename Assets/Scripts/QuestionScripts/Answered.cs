@@ -37,9 +37,7 @@ public class Answered : MonoBehaviour {
             gameObject.GetComponent<Button>().interactable = false;
         }
 
-        StartCoroutine(Wait());
-
-        
+        StartCoroutine(Wait());       
     }
 
     public void ContinuePlaying() {

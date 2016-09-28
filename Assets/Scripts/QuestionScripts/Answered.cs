@@ -1,33 +1,40 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class Answered : MonoBehaviour {
 
-    private QPopUp question;                            // Reference the Question pop up script
-    private FuelConsumption fuel;
+    [Tooltip("The amount of time you wait to see correct/incorrect answers")]
+    public float waitTime = 2;                                
+    bool isWaiting;                                             //generic bool to stop the Coroutine
+    private QPopUpManager question;                            // Reference the Question pop up script
 
-    void Start() {
-        question = GameObject.Find("Canvas").GetComponent<QPopUp>();        // Find the script
-        fuel = GameObject.FindGameObjectWithTag("Player").GetComponent<FuelConsumption>();
+    void Start()
+    {
+        question = GameObject.FindGameObjectWithTag("GameManager").GetComponent<QPopUpManager>(); //grabs the question pop-up script
+
+        if (question == null)
+            Debug.LogError("There is no QPopUpManager on gameManager or " + GameObject.FindGameObjectWithTag("GameManager") + "");
     }
 
-    public void Answer() {
-        if (gameObject.name == "Answer 1")                                  // Find the correct answer... will be a variable
+    public void Answer()
+    {
+        question.CheckIfCorrect(this.GetComponentInChildren<Text>().text);          // check if the question is right
+
+        StartCoroutine(WaitAnswer());
+    }
+
+    IEnumerator WaitAnswer()
+    {
+        if (!isWaiting)
         {
-            print("This is the correct answer");                            // Test for now.. will turn green
-            FuelConsumption.fuelAmount += fuel.platformAddition;            // adds the amount of fuel dictated
-
-            if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max
-                FuelConsumption.fuelAmount = fuel.fuelStartAmount;
-
-            fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
+            isWaiting = true;
+            yield return new WaitForSecondsRealtime(waitTime);                  // waits for the right time
+            question.WasAnswered();                                             // Enable the next buttons
+            question.ResetColor();                                              // reset colors
+            isWaiting = false;
         }
-        else {
-            print("This is the wrong answer");                              // All wrong answers will turn red
-        }
-
-        question.WasAnswered();                                             // Enable the next buttons
     }
 
     public void ContinuePlaying() {

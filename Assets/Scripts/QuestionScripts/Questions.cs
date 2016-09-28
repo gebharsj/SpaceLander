@@ -3,12 +3,19 @@ using System.Collections;
 
 public class Questions : MonoBehaviour {
 
+    string fact;
     string question;
     string optionOne;
     string optionTwo;
     string optionThree;
     string optionFour;
     string answer;
+
+    public string Fact
+    {
+        get { return fact; }
+        set { fact = value; }
+    }
 
     public string Question
     {
@@ -58,6 +65,7 @@ public class Questions : MonoBehaviour {
 
     public void DisplayQuestion()
     {
+        Debug.Log(fact);
         Debug.Log(question);
         Debug.Log(optionOne);
         Debug.Log(optionTwo);

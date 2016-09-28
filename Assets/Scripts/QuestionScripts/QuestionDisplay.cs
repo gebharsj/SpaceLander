@@ -5,21 +5,42 @@ using System.Collections;
 public class QuestionDisplay : MonoBehaviour {
 
     public Text[] textArrays = new Text[5]; //the list of the texts that appear in the pop-up
-    public static string answerText;        //establish what the answer is
 
+    [Tooltip("Index of the question that is appearing")]
     public int questionNumber = 0;          //the index of the question appearing
 
-    TextImportation _textImportation;
+    GameObject gameManager;                 //gameManager
 
-    public static bool hasApplied;                 //makes sure you only scramble onceS
+    TextImportation _textImportation;
+    QPopUpManager qManager;
+
+    public static bool hasApplied;           //makes sure you only scramble onces
+
+    void Awake()
+    {
+        gameManager = GameObject.FindGameObjectWithTag("GameManager");
+
+        if (gameManager == null)
+            Debug.LogError("There is no gameobject tagged \"GameManager\".");
+
+        _textImportation = gameManager.GetComponent<TextImportation>();
+
+        if (_textImportation == null)
+            Debug.LogError("Text Importation is not attached to the Game Manager.");
+
+        qManager = gameManager.GetComponent<QPopUpManager>();
+
+        if (qManager == null)
+            Debug.LogError("Q Pop Manager cannot be found on the gameManager.");
+    }
 
     public void ApplyText()
     {
-        _textImportation = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TextImportation>();
+        qManager.SetIndex();                                                                  //sets the Index for proper use
+        questionNumber = QPopUpManager.currentIndex;                                          //brings in the index from QPopUpManager
+        string result = ScrambleResult();                                                     //returns a 4 digit string
 
-        string result = ScrambleResult();                                        //returns a 4 digit string
-
-        textArrays[0].text = _textImportation.questionList[0].Question;          // Apply the text from the text document
+        textArrays[0].text = _textImportation.questionList[questionNumber].Question;          // Apply the text from the text document
 
         if (!hasApplied) //makes it only happen once
         {
@@ -45,7 +66,6 @@ public class QuestionDisplay : MonoBehaviour {
                 }
             }
 
-            answerText = _textImportation.questionList[0].Answer;     // Establish which is the answer
             hasApplied = true;                                        
         }
     }

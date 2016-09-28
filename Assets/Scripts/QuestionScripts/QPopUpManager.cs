@@ -7,7 +7,7 @@ public class QPopUpManager : MonoBehaviour {
     public GameObject[] answers;                                // Array of all the answer buttons
     public GameObject[] answeredButtons;                        // The buttons available after question is answered
 
-    private int landingCount = 0;                               // How many times does the ship land on an active landing pad.
+    public static int landingCount = 0;                         // How many times does the ship land on an active landing pad.
 
     public static int currentIndex = 0;                         //the current index you're using for questions
     [Tooltip("The amount of starting facts in the beginning")]
@@ -21,6 +21,7 @@ public class QPopUpManager : MonoBehaviour {
 
     void Start()
     {
+        landingCount = 0; //reset landingCount
         //=================Grab the Components================
         txtImport = GetComponent<TextImportation>();
 
@@ -86,7 +87,11 @@ public class QPopUpManager : MonoBehaviour {
                 FuelConsumption.fuelAmount = fuel.fuelStartAmount;
 
             fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
+
+            WinScreenManager.correctAnswer++;                               //add correct value
         }
+        else
+            WinScreenManager.incorrectAnswer++;                             //add incorrect value
 
         ChangeColor(rightAnswer);
     }
@@ -125,7 +130,8 @@ public class QPopUpManager : MonoBehaviour {
                 answeredButtons[i].SetActive(true);                 // enable both ContinuePlaying and NextLevel
             }
         }
-        else {
+        else
+        {
             answeredButtons[1].SetActive(true);                     // if all the platform have been landed upon, only set NextLevel active.
         }
 

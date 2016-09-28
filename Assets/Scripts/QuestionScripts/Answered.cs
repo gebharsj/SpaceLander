@@ -48,10 +48,14 @@ public class Answered : MonoBehaviour {
         gameObject.transform.parent.gameObject.SetActive(false);            // Set the Pop up inactive
     }
 
-    public void NextLevel() {
+    public void NextLevel()
+    {
         PopUp.secondTime = false;
-        PointsManager.savedPoints = PointsManager.totalPoints;             //saves the points, can't lose them
-        SceneManager.LoadScene(1);                                          // Load the next scene (loads game atm)
-        
+        PointsManager.savedPoints = PointsManager.totalPoints;              //saves the points, can't lose them
+        int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
+
+        WinScreenManager.numOfPlatforms[currentScene] = QPopUpManager.landingCount; //keeps track of the amount of platforms you landed on
+
+        SceneManager.LoadScene((currentScene + 1));                             // Load the next scene  
     }
 }

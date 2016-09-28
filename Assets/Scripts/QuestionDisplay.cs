@@ -11,8 +11,7 @@ public class QuestionDisplay : MonoBehaviour {
 
     TextImportation _textImportation;
 
-    [HideInInspector]
-    public bool hasApplied;                 //makes sure you only scramble onceS
+    public static bool hasApplied;                 //makes sure you only scramble onceS
 
     public void ApplyText()
     {

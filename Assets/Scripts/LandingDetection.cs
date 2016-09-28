@@ -35,8 +35,9 @@ public class LandingDetection : MonoBehaviour {
             {
                 if (other.isTrigger)                    // Check if the collider is a trigger
                 {
-                    other.enabled = false;              // if so, turn off the trigger
+                    other.enabled = false;                              // if so, turn off the trigger
                     LandingDetectionManager.hasFinished = false;        // the level is not finished
+                    QuestionDisplay.hasApplied = false;                 // allows the options to beScrambled again
                 }
                 else
                     print(other.name);

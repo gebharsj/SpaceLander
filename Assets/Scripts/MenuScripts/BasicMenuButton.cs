@@ -14,10 +14,14 @@ public class BasicMenuButton : MonoBehaviour
         SceneManager.LoadScene(currentScene.name);
     }
 
-    public void ToggleObject(GameObject turnOff, GameObject turnOn) //toggle an object on and another off
+    public void ToggleOnObject(GameObject turnOn) //toggle an object on and another off
+    {
+        turnOn.SetActive(true);
+    }
+
+    public void ToggleOffObject(GameObject turnOff) //toggle an object on and another off
     {
         turnOff.SetActive(false);
-        turnOn.SetActive(true);
     }
 
     public void ExitGame() //exit game

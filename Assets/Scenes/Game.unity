@@ -375,11 +375,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c77248933c090494c8fa69fab2ab2338, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questionText: {fileID: 996988382}
-  answerOne: {fileID: 436026177}
-  answerTwo: {fileID: 813807374}
-  answerThree: {fileID: 389872105}
-  answerFour: {fileID: 474472084}
+  textArrays:
+  - {fileID: 996988382}
+  - {fileID: 436026177}
+  - {fileID: 813807374}
+  - {fileID: 389872105}
+  - {fileID: 474472084}
 --- !u!1001 &117848145
 Prefab:
   m_ObjectHideFlags: 0

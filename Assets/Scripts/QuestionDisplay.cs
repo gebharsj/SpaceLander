@@ -4,51 +4,70 @@ using System.Collections;
 
 public class QuestionDisplay : MonoBehaviour {
 
-    public Text questionText;               // Get the text for the question 
-    public Text answerOne;                  //...and all the answers
-    public Text answerTwo;
-    public Text answerThree;
-    public Text answerFour;
-    public static string answerText;
+    public Text[] textArrays = new Text[5]; //the list of the texts that appear in the pop-up
+    public static string answerText;        //establish what the answer is
+
+    public int questionNumber = 0;          //the index of the question appearing
 
     TextImportation _textImportation;
 
-    string choice1;
-    string choice2;
-    string choice3;
-    string choice4;
+    [HideInInspector]
+    public bool hasApplied;                 //makes sure you only scramble onceS
 
     public void ApplyText()
     {
         _textImportation = GameObject.FindGameObjectWithTag("GameManager").GetComponent<TextImportation>();
 
-        string result = scrambleResult();
-        print(result);
+        string result = scrambleResult();                                        //returns a 4 digit string
 
-        questionText.text = _textImportation.questionList[0].Question;          // Apply the text from the text document
-        answerOne.text = _textImportation.questionList[0].OptionOne;
-        answerTwo.text = _textImportation.questionList[0].OptionTwo;
-        answerThree.text = _textImportation.questionList[0].OptionThree;
-        answerFour.text = _textImportation.questionList[0].OptionFour;
-        answerText = _textImportation.questionList[0].Answer;                   // Establish which is the answer
+        textArrays[0].text = _textImportation.questionList[0].Question;          // Apply the text from the text document
+
+        if (!hasApplied) //makes it only happen once
+        {
+            for (int index = 0; index < (textArrays.Length - 1); index++)
+            {
+                string choiceString = result.Substring(index, 1);
+                int choice = int.Parse(choiceString);
+
+                switch (choice) //sets the index
+                {
+                    case 1: //depending on the option
+                        textArrays[(index + 1)].text = _textImportation.questionList[questionNumber].OptionOne; 
+                        break;
+                    case 2:
+                        textArrays[(index + 1)].text = _textImportation.questionList[questionNumber].OptionTwo;
+                        break;
+                    case 3:
+                        textArrays[(index + 1)].text = _textImportation.questionList[questionNumber].OptionThree;
+                        break;
+                    case 4:
+                        textArrays[(index + 1)].text = _textImportation.questionList[questionNumber].OptionFour;
+                        break;
+                }
+            }
+
+            answerText = _textImportation.questionList[0].Answer;     // Establish which is the answer
+            hasApplied = true;                                        
+        }
     }
 
-    string scrambleResult()
+    //-----------------Returns a 4 digits scamble with digits 1-4-----------
+    string scrambleResult() //
     {
-        bool[] arrayB = new bool[4];
+        bool[] arrayB = new bool[4];                    //bools to make sure no digit is repeated
         string scramble = "";
 
-        for (int index = 0; index <= 50; index++)
+        for (int index = 0; index <= 50; index++)       //index of 50 to make sure that it fully scrambles
         {
-            int result = Random.Range(1, 5);
+            int result = Random.Range(1, textArrays.Length); //chose a random number between 1 and the max (default 5)
 
             switch (result)
             {
                 case 1:
-                    if (!arrayB[0])
+                    if (!arrayB[0]) //if it has not been chosen yet...
                     {
-                        scramble += "1";
-                        arrayB[0] = true;
+                        scramble += "1";    //add the number to the result
+                        arrayB[0] = true;   //now it is chosen
                     }
                     break;
                 case 2:

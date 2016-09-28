@@ -7,8 +7,6 @@ public class DeathManager : MonoBehaviour {
     [Tooltip("Where the player starts at.")]
     public Transform startPosition;        //where the player should go
 
-    static Vector3 realStart;              //convert the transform into a Vector3
-
     static GameObject player;              //player, since there's only one
 
     private static bool isDelayed;         //checking if delay is happening
@@ -29,8 +27,6 @@ public class DeathManager : MonoBehaviour {
         startPosition = GameObject.Find("StartPoint").GetComponent<Transform>();
         if (startPosition == null)
             Debug.LogError("Cannot find the startPosition");
-
-        realStart = new Vector3(startPosition.position.x, startPosition.position.y, player.transform.position.z); //convert the transform to vector3
 	}
 
     void OnTriggerEnter2D(Collider2D other)

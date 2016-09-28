@@ -17,8 +17,6 @@ public class FuelConsumption : MonoBehaviour
     public Text fuelText;                           //The text for the fuel
     public Image fuelImage;                         //The image for the fuel
 
-    public float fuelFloat;
-    public float _fillAmount;
     void Start()
     {
         savedStartAmount = fuelStartAmount;         //saving fuel to a static var
@@ -33,9 +31,7 @@ public class FuelConsumption : MonoBehaviour
     {                       // The current amount of fuel
         fuelText.text = "Fuel: " + fuelAmount.ToString();
 
-        fuelImage.fillAmount = (fuelAmount / 100.0f) * (fuelStartAmount / 10.0f);
-        fuelFloat = (fuelAmount / 100.0f) * (fuelStartAmount / 10.0f);
-        _fillAmount = fuelImage.fillAmount;
+        fuelImage.fillAmount = (fuelAmount / 100.0f) * (fuelStartAmount / 10.0f);       //normalize the value of fuel amount so that it can be used for the images fillAmount, and updating the fuel amount
 
         if (fuelAmount > 0)
         {

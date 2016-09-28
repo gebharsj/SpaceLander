@@ -12,8 +12,7 @@ public class TextImportation : MonoBehaviour {
     public char breakPoint;
 
 	// Use this for initialization
-	void Start ()
-    {
+	void Start (){
         try
         {
             using (StreamReader sr = new StreamReader(textFileName))

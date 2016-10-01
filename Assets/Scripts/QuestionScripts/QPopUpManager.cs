@@ -95,7 +95,7 @@ public class QPopUpManager : MonoBehaviour {
             if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max
                 FuelConsumption.fuelAmount = fuel.fuelStartAmount;
 
-            fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
+            fuel.PrintFuel();
 
             correctlyAnswered++;
         }

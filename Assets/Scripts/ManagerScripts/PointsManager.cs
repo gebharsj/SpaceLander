@@ -5,7 +5,7 @@ public class PointsManager : MonoBehaviour
 {
     public static int totalPoints; // the total points
 
-    public static int savedPoints; // the amount of points you've gotten
+    public static int savedPoints = 0; // the amount of points you've gotten
 
     [Tooltip("Text for the points.")]
     public Text pointsText; //the text for the points

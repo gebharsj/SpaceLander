@@ -49,9 +49,9 @@ public class DeathManager : MonoBehaviour {
         {
             isDelayed = true;                                                   //prevents delay from happening twice
             player.GetComponent<ShipControls>().enabled = false;                //prevents player from moving when crashed
-            yield return new WaitForSeconds(staticDelay);                       //delay for animation
-
             PointsManager.totalPoints = PointsManager.savedPoints;              //resets the points to the last level
+                                    
+            yield return new WaitForSeconds(staticDelay);                       //delay for animation
 
             player.GetComponent<ShipControls>().enabled = true;                 //reset controls
             isDelayed = false;                                                  //allows delay to happen again

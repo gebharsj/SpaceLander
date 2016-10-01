@@ -11,6 +11,12 @@ public class WinScreenManager : MonoBehaviour {
 
     public static int[] numOfPlatforms = new int[9];
 
+    public Image[] levelPics = new Image[9];
+
+    public string[] levelNames = new string[] { "Moon", "Mercury", "Venus", "Mars", "Jupiter", "Saturn", "Uranus", "Neptune", "Pluto" };
+
+    public Sprite[] platformPics = new Sprite[4];
+
     public Text printText;
 
     void Start()
@@ -28,16 +34,14 @@ public class WinScreenManager : MonoBehaviour {
     {
         printText.text = "Correct Answers: " + correctAnswer + "\n Incorrect Answers: " + incorrectAnswer;
 
-        /*
         for (int index = 0; index < visitedArray.Length; index++)
         {
-            printText.text += "\n " + visitedArray[index].ToString();
-        }
-        */
+            if (!visitedArray[index])
+                levelPics[index].GetComponent<Image>().color = Color.gray;
 
-        for (int index = 0; index < numOfPlatforms.Length; index++)
-        {
-            printText.text += "\n " + numOfPlatforms[index].ToString();
+            levelPics[index].GetComponentInChildren<Text>().text = levelNames[index];
+
+            levelPics[index].transform.GetChild(1).GetComponent<Image>().sprite = platformPics[numOfPlatforms[index]];            
         }
     }
 }

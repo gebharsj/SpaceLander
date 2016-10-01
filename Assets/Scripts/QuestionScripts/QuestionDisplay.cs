@@ -39,7 +39,6 @@ public class QuestionDisplay : MonoBehaviour {
     {
         qManager.SetIndex();                                                                  //sets the Index for proper use
         questionNumber = QPopUpManager.currentIndex;                                          //brings in the index from QPopUpManager
-        print(questionNumber);
         string result = ScrambleResult();                                                     //returns a 4 digit string
 
         textArrays[0].text = _textImportation.questionList[questionNumber].Question;          // Apply the text from the text document

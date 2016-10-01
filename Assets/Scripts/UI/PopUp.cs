@@ -13,11 +13,10 @@ public class PopUp : MonoBehaviour {
     {
         if (!secondTime)
         {
-            WinScreenManager.PrintValues();
             //=================Set that You've Arrived=================
             int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
 
-            WinScreenManager.visitedArray[currentScene] = true;               //states that you have visited the planet you're going to
+            WinScreenManager.visitedArray[(currentScene - 1)] = true;           //states that you have visited the planet you're going to (minus one to take in main menu)
             //==================Grab All the Components==============
             text = GetComponentsInChildren<Text>();      // Get the text component within the children
 

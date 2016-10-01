@@ -16,11 +16,12 @@ public class Answered : MonoBehaviour {
 
         if (question == null)
             Debug.LogError("There is no QPopUpManager on gameManager or " + GameObject.FindGameObjectWithTag("GameManager") + "");
+
     }
 
     public void Answer()
     {
-        question.CheckIfCorrect(this.GetComponentInChildren<Text>().text);          // check if the question is right
+        question.CheckIfCorrect(this.GetComponentInChildren<Text>().text);
 
         StartCoroutine(WaitAnswer());
     }
@@ -54,8 +55,17 @@ public class Answered : MonoBehaviour {
         PointsManager.savedPoints = PointsManager.totalPoints;              //saves the points, can't lose them
         int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
 
-        WinScreenManager.numOfPlatforms[currentScene] = QPopUpManager.landingCount; //keeps track of the amount of platforms you landed on
-
+        SendStatsToEndScreen();                             
+        WinScreenManager.correctAnswer += question.correctlyAnswered;       //add the correct answers to the running total
+        WinScreenManager.incorrectAnswer += question.incorrectlyAnswered;   //add the incorrect answers to the running total
         SceneManager.LoadScene((currentScene + 1));                             // Load the next scene  
     }
+
+    public static void SendStatsToEndScreen()
+    {
+        int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
+
+        WinScreenManager.numOfPlatforms[(currentScene - 1)] = QPopUpManager.landingCount; //keeps track of the amount of platforms you landed on (-1 to take main menu into account)
+    }
 }
+

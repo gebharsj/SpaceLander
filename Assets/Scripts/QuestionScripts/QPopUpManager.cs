@@ -4,7 +4,9 @@ using System.Collections.Generic;
 
 public class QPopUpManager : MonoBehaviour {
 
+    [Tooltip("All the Choices for the Answer")]
     public GameObject[] answers;                                // Array of all the answer buttons
+    [Tooltip("The Buttons that you click on after the question")]
     public GameObject[] answeredButtons;                        // The buttons available after question is answered
 
     public static int landingCount = 0;                         // How many times does the ship land on an active landing pad.
@@ -12,6 +14,11 @@ public class QPopUpManager : MonoBehaviour {
     public static int currentIndex = 0;                         //the current index you're using for questions
     [Tooltip("The amount of starting facts in the beginning")]
     public int startingFacts = 4;                               //amt of starting facts
+
+    [HideInInspector]
+    public int correctlyAnswered = 0;                           //keeps track of the amount correct
+    [HideInInspector]
+    public int incorrectlyAnswered = 0;                         //keeps track of the amount incorrect
 
     public List<int> randIndexs = new List<int>();              //the list of arrays
     static List<int> staticIndexs = new List<int>();            //storing static arrays
@@ -88,10 +95,10 @@ public class QPopUpManager : MonoBehaviour {
 
             fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
 
-            WinScreenManager.correctAnswer++;                               //add correct value
+            correctlyAnswered++;
         }
         else
-            WinScreenManager.incorrectAnswer++;                             //add incorrect value
+            incorrectlyAnswered++;
 
         ChangeColor(rightAnswer);
     }
@@ -122,7 +129,6 @@ public class QPopUpManager : MonoBehaviour {
             answers[i].SetActive(false);                        // disable it ( Will eventually change color)
         }
 
-        landingCount++;                                         // Increment to count the landing
         if (landingCount < 3)                                   // If all the platforms are not landed upon
         {
             for (int i = 0; i < answeredButtons.Length; i++)

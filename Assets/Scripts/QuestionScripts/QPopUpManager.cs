@@ -16,9 +16,9 @@ public class QPopUpManager : MonoBehaviour {
     public int startingFacts = 4;                               //amt of starting facts
 
     [HideInInspector]
-    public int correctlyAnswered = 0;                           //keeps track of the amount correct
+    public static int correctlyAnswered = 0;                           //keeps track of the amount correct
     [HideInInspector]
-    public int incorrectlyAnswered = 0;                         //keeps track of the amount incorrect
+    public static int incorrectlyAnswered = 0;                         //keeps track of the amount incorrect
 
     public List<int> randIndexs = new List<int>();              //the list of arrays
     static List<int> staticIndexs = new List<int>();            //storing static arrays
@@ -29,6 +29,8 @@ public class QPopUpManager : MonoBehaviour {
     void Start()
     {
         landingCount = 0; //reset landingCount
+        correctlyAnswered = 0;
+        incorrectlyAnswered = 0;
         //=================Grab the Components================
         txtImport = GetComponent<TextImportation>();
 

@@ -56,8 +56,7 @@ public class Answered : MonoBehaviour {
         int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
 
         SendStatsToEndScreen();                             
-        WinScreenManager.correctAnswer += question.correctlyAnswered;       //add the correct answers to the running total
-        WinScreenManager.incorrectAnswer += question.incorrectlyAnswered;   //add the incorrect answers to the running total
+       
         SceneManager.LoadScene((currentScene + 1));                             // Load the next scene  
     }
 
@@ -65,6 +64,8 @@ public class Answered : MonoBehaviour {
     {
         int currentScene = SceneManager.GetActiveScene().buildIndex;        //grabs the current scene int
 
+        WinScreenManager.correctAnswer += QPopUpManager.correctlyAnswered;       //add the correct answers to the running total
+        WinScreenManager.incorrectAnswer += QPopUpManager.incorrectlyAnswered;   //add the incorrect answers to the running total
         WinScreenManager.numOfPlatforms[(currentScene - 1)] = QPopUpManager.landingCount; //keeps track of the amount of platforms you landed on (-1 to take main menu into account)
     }
 }

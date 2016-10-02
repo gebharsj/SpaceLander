@@ -4164,6 +4164,11 @@ Prefab:
       propertyPath: textFileName
       value: test.txt
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011423273942, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: gravityForce
+      value: 3.7
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0

@@ -4364,7 +4364,7 @@ Prefab:
     - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
         type: 2}
       propertyPath: textFileName
-      value: test.txt
+      value: 6_Saturn.txt
       objectReference: {fileID: 0}
     - target: {fileID: 114000011423273942, guid: 45a630fc0c3902b4083c3f4837c0be1a,
         type: 2}

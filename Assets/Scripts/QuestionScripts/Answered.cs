@@ -51,7 +51,8 @@ public class Answered : MonoBehaviour {
     public void NextLevel() {
         PopUp.secondTime = false;
         PointsManager.savedPoints = PointsManager.totalPoints;             //saves the points, can't lose them
-        SceneManager.LoadScene(1);                                          // Load the next scene (loads game atm)
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex + 1);               // Load the next scene (loads game atm)
         
     }
 }

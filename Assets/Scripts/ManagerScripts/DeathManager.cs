@@ -40,7 +40,8 @@ public class DeathManager : MonoBehaviour {
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
         player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
-        SceneManager.LoadScene(1);
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.buildIndex);
     }
 
     static IEnumerator DeathDelay()

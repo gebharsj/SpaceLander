@@ -77,9 +77,12 @@ public class QPopUpManager : MonoBehaviour {
    public void CheckIfCorrect(string optionText)        //brings in the answer you clicked on
     {
         string rightAnswer = txtImport.questionList[currentIndex].Answer;
-
+        print("Right answer: " + rightAnswer);
+        print("Option Text: " + optionText);
         if (optionText.Equals(rightAnswer))
+     //  if (string.Compare(optionText, rightAnswer))
         {
+            print("CORRECT!");
             FuelConsumption.fuelAmount += fuel.platformAddition;            // adds the amount of fuel dictated
 
             if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max

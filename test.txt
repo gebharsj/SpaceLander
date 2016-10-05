@@ -1,5 +1,0 @@
-Mercury has 0 moons. `How many moons does Mercury have? `0`1`2`3`0
-It takes Mercury 59 earth days to complete one spin. `How many earth days does to take for Mercury to complete one spin? `27`59`34`111`59
-Mercury can reach temperatures up to 801 degrees fahrenheit! `How hot can Mercury get? `502`607`801`1123`801
-Brr! Mercury can reach temperatures as low as -300 degrees fahrenheit! `Roughly, how cold can it get on Mercury? `-10`-100`-300`-500`-300
-Mercury's core is iron rich, allowing it to deflect the sun's harsh solarwinds. `What is the main component of Mercury's core? `Iron`Lead`Gold`Uranium`Iron

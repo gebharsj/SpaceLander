@@ -1,99 +1,99 @@
-`The gravity on the Moon is 1.6 m/s² (meters per second). ‘What is the gravity on the moon? ‘6.5 m/s² ‘1.6 m/s² ‘0.1 m/s²  ‘3.0 m/s² ‘1.6 m/s²
-`The moon has no moons. How many moons does the moon have? `3 moons `5 moons `2 moons `No moons `No moons
-`A rock that weighs 3 pounds on Earth would weigh 0.5 pounds on the moon. How much would a 3 pound rock weigh on the moon? `There is no weight on the moon `0.5 pounds `4 pounds `10 pounds `0.5 pounds
-`It takes 27,000 Earth days for the moon to orbit (which means to completely circle) the Earth. How many Earth days does it take for the moon to orbit the Earth? ‘22 ‘25 ‘35 ‘27 ‘27
-`The moon reaches up to 212 degrees Fahrenheit. How hot does it get on the moon? ‘250 degrees ‘212 degrees ‘170 degrees ‘146 degrees ‘212 degrees 
-`The moon gets as cold as -279 degrees Fahrenheit. How cold does the moon reach? ‘-244 degrees ‘-193 degrees ‘-310 degrees ‘-279 degrees `-279 degrees
-`The moon has no name. What is the moon’s name? `Marcus `Augustus `Athens `There is no name ‘There is no name
-`There is no wind on the moon. How fast do the wind speeds reach on the moon? `137 MPH `142 MPH `278 MPH `There is no wind `There is no wind
-`It takes the moon 27 days to rotate. How many days does it take for the moon to rotate? ‘35 days ‘27 days ‘48 days ‘19 days ‘27 days
-`Our moon is the only moon in the solar system that we have not given a name to. Moon is not a name; it's a description of a solid object that is in orbit around another, larger object. What is a moon? ‘An object that spins `Any object in space `A solid object that is in orbit around another, larger object `A block of cheese `A solid object that is in orbit around another, larger object
-`Venus is the hottest planet in the solar system. `Which planet is the hottest in our solar system? `Mars `Pluto `Venus `Uranus `Venus
-`The gravity on Mercury is 3.7 m/s² (meters per second). ‘What is the gravity on Mercury? ‘1.4 m/s² ‘2.9 m/s² `3.7 m/s²  ‘9.0 m/s² `3.7 m/s²
-`Mercury has no moons. How many moons does Mercury have? `9 moons `No moons `5 moons `4 moons `No moons
-`A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mercury. How much would a 3 pound rock weigh on the moon? `1.1 pounds `2.0 pounds `4.4 pounds `6.3 pounds `1.1 pounds
-`It takes 88 Earth days for Mercury to orbit (which means to completely circle) the Sun. How many Earth days does it take for Mercury to orbit the Sun? ‘88 days ‘65 days ‘115 days ‘77 days ‘88 days
-`Mercury reaches up to 801 degrees Fahrenheit. How hot does it get on Mercury? ‘856 degrees ‘903 degrees ‘801 degrees ‘678 degrees ‘801 degrees 
-`Mercury gets as cold as -299 degrees Fahrenheit. How cold does Mercury reach? ‘-299 degrees ‘-190 degrees ‘-347 degrees ‘-264 degrees `-299 degrees
-`Named Mercurius in Latin by the Romans because it appears to move so swiftly. What is the Latin name for Mercury? `Mathus `Medelim `Mercurius `Mercury does not have a Latin name ‘Mercurius
-`There is no wind on Mercury. How fast do the wind speeds reach on Mercury? `35 MPH `109 MPH `76 MPH `There is no wind `There is no wind
-`It takes Mercury 59 days to rotate. How many days does it take for Mercury to rotate? ‘35 days ‘47 days ‘74 days ‘59 days ‘59 days
-`Mercury was named for its speed. It travels 107,000 mph. `What was Mercury named for? `The planet’s immense speed `The size of the planet `The color of the planet `The temperature of the planet `The planet’s immense speed
-`In order, the planets in our solar system are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. `Which order of the planets is correct? `Earth, Venus, Mercury, Saturn, Neptune, Mars, Uranus, and Jupiter `Pluto, Mars, Earth, Saturn, Mercury, Mars, Uranus, Neptune, and Jupiter `Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune `Uranus, Mercury, Neptune, Jupiter, Venus, Earth, Saturn, and Mars `Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune
-`The gravity on Venus is 8.9 m/s² (meters per second). ‘What is the gravity on Venus? ‘8.9 m/s² ‘1.5 m/s² `5.2 m/s²  ‘11.6 m/s² `8.9 m/s²
-`Venus has no moons. How many moons does Venus have? `10 moons `6 moons `No moons `3 moons `No moons
-`A rock that weighs 3 pounds on Earth would weigh 2.7 pounds on Venus. How much would a 3 pound rock weigh on Venus? `1.5 pounds `4.5 pounds `2.7 pounds `8.6 pounds `2.7 pounds
-`It takes 225 Earth days for Venus to orbit (which means to completely circle) the Sun. How many Earth days does it take for Mercury to orbit the Sun? ‘189 days ‘225 days ‘276 days ‘302 days ‘225 days
-`Venus reaches up to 860 degrees Fahrenheit. How hot does it get on Venus? ‘860 degrees ‘914 degrees ‘753 degrees ‘692 degrees ‘860 degrees 
-`Venus gets as cold as -283 degrees Fahrenheit. How cold does Venus reach? ‘-299 degrees ‘-190 degrees ‘-347 degrees ‘-264 degrees `-299 degrees
-`Venus is named after the Roman goddess of love. Which goddess is Venus named after? `The goddess of happiness `The goddess of love `The goddess of time `The goddess of hugs ‘The goddess of love
-`The winds on Venus have a speed of 249 mph. How fast do the wind speeds reach on Venus? `165 mph `205 mph `367 mph `249 mph `249 mph
-`It takes Venus 243 days to rotate. How many days does it take for Venus to rotate? ‘87 days ‘243 days ‘164 days ‘123 days ‘243 days
-`The surface of Venus is hot enough to melt lead. `Venus is so hot it can melt which of the following? `Plastic `Lead `Glass `All of these answers `All of these answers
-`Only Mercury, Venus, Earth, and Mars are considered terrestrial planets. `Which planet is NOT terrestrial? `Venus `Jupiter `Mars `Mercury `Jupiter
-`The gravity on Mars is 3.7 m/s² (meters per second). ‘What is the gravity on Mars? ‘3.7 m/s² ‘2.0 m/s² `5.2 m/s²  ‘8.5 m/s² `3.7 m/s²
-`Mars has 2 moons. How many moons does Mars have? `9 moons `No moons `2 moons `5 moons `2 moons
-`A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mars. How much would a 3 pound rock weigh on Mars? `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds
-`It takes 687 Earth days for Mars to orbit (which means to completely circle) the Sun. How many Earth days does it take for Mars to orbit the Sun? ‘687 days ‘453 days ‘513 days ‘400 days ‘453 days
-`Mars reaches up to 68 degrees Fahrenheit. How hot does it get on Mars? ‘93 degrees ‘55 degrees ‘68 degrees ‘152 degrees ‘68 degrees 
-`Venus gets as cold as -283 degrees Fahrenheit. How cold does Venus reach? ‘-299 degrees ‘-190 degrees ‘-347 degrees ‘-264 degrees `-299 degrees
-`Mars is named after the Roman god of war because it is red, like blood. Why is Mars named after the god of war? `The planet is angry and throws rocks `The planet is red `Mars is the hottest planet `It is not named after the god of war ‘The planet is red
-`The winds on Mars have a speed of 249 mph. How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph `60 mph `60 mph
-`It takes Mars about 1 Earth day to rotate. How long is a day on Mars (or how long does it take to rotate)? ‘53 days ‘34 days ‘About an Earth day ‘3 days ‘About an Earth day
-`The word planet comes from a ancient Greek word which means “Wanderer” `The word planet was created from an Greek word which means what? `Wanderer `Star `Ship `Above `Wanderer
-`A mountain on Mars, Olympus, stands about 3 times taller than Mount Everest, which is the tallest point on Earth. `What is the name of the mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan `Olympus `Plumuros `Olympus
-`The gravity on Jupiter is 24.8 m/s² (meters per second). ‘What is the gravity on Jupiter? ‘80.1 m/s² ‘24.8 m/s² `35.5 m/s²  `16.7 m/s² `24.8 m/s²
-`Jupiter has 50 moons. How many moons does Jupiter have? `32 moons `50 moons `68 moons `27 moons `50 moons
-`A rock that weighs 3 pounds on Earth would weigh 7.1 pounds on Jupiter. How much would a 3 pound rock weigh on Jupiter? `6.3 pounds `4.0 pounds `7.1 pounds `8.2 pounds `7.1 pounds
-`It takes about 12 years for Jupiter to orbit (which means to completely circle) the Sun. About how many years does it take Jupiter to orbit the Sun? ‘12 years `3 years ‘1 year ‘77 8 years ‘12 years
-`Jupiter reaches up to 70 degrees Fahrenheit. How hot does it get on Jupiter? ‘50 degrees ‘70 degrees ‘85 degrees ‘64 degrees ‘70 degrees 
-`Jupiter gets as cold as -229 degrees Fahrenheit. How cold does Jupiter reach? ‘-229 degrees ‘-322 degrees ‘-184 degrees ‘-271 degrees `-229 degrees
-`The Romans named Jupiter after the god of the sky and thunder. What is the Romans believe Jupiter was the god of? `Water `Air and Dirt `Sky and Thunder `Change ‘Sky and Thunder
-`Winds on Jupiter are 250 mph. How fast do the wind speeds reach on Jupiter? `219 mph `187 mph `250 mph `There is no wind `250 mph
-`It takes Jupiter about 10 hours to rotate. How many hours does it take for Jupiter to rotate? ‘10 hours ‘27 hours ‘3 hours ‘45 hours ‘10 hours
-`Scientist believes the core, or the very center, of Jupiter can reach up to about 63,000 degrees Fahrenheit. How hot is the core of Jupiter? ‘58,000 degrees ‘63,000 degrees ‘47,000 degrees ‘70,000 degrees ‘63,000 degrees 
-`Jupiter has the biggest moon in our solar system, named Ganymede. `What is the name of the largest moon in our solar system? `Ganymede `Gunther `Medeler `Pluto `Ganymede
-`The gravity on Saturn is 10.4 m/s² (meters per second). ‘What is the gravity on Saturn? ‘2.7 m/s² `25.5 m/s² `3.9 m/s²  ‘10.4 m/s² `10.4 m/s²
-`Saturn has 53 moons. How many moons does Saturn have? `53 moons `60 moons `No moons `44 moons `53 moons
-`A rock that weighs 3 pounds on Earth would weigh 7.1 pounds on Venus. How much would a 3 pound rock weigh on Venus? `6.2 pounds `10.4 pounds `1.3 pounds `7.1 pounds `7.1 pounds
-`Saturn takes 29.5 Earth years to orbit (which means to completely circle) the Sun. How many years does it take for Jupiter to orbit the Sun? ‘56 years ‘29.5 years ‘89.5 years ‘21 years ‘29.5 years
-`Saturn stays around -288 degrees Fahrenheit. What is the normal temperature on Saturn? ‘-105 degrees ‘36 degrees ‘-288 degrees ‘-359 degrees ‘-288 degrees 
-`Saturn gets most of it’s heat from its core, which is about 21,000 degrees. How hot is the core of Saturn? ‘21,000 degrees ‘30,000 degrees ‘16,000 degrees `5,000 degrees `21,000 degrees
-`Saturn was named after the Greek titan Luna Saturni. Who is Saturn named after? `The Lunar Star `The roman goddess Lina Aturn `The Greek titan Luna Saturni `The person who discovered the planet ‘The Greek titan Luna Saturni
-`The winds on Saturn reach 1100 mph. How fast are the wind speeds on Saturn? `953 mph `1440 mph `2000 mph `1100 mph `1100 mph
-`A day on Saturn is about 11 Earth hours (that’s how long it takes to rotate once). How many hours does it take Saturn to rotate? ‘11 hours ‘1 hour ‘23 hours ‘18 hours ‘11 hours
-`Venus is the closest planet to Earth. `Which planet is the closest to Earth? `Venus `Mars `Mercury `Neptune `Venus
-`The Sun has the most mass in our solar system. `What has the most mass in our solar system? `Jupiter `Neptune `The Sun `Venus `The Sun
-`The gravity on Uranus is 8.7 m/s² (meters per second). ‘What is the gravity on Uranus? ‘1.2 m/s² ‘5.1 m/s² `8.7 m/s²  ‘12.3 m/s² `8.7 m/s²
-`Uranus has 37 moons. How many moons does Uranus have? `9 moons `45 moons `24 moons `37 moons `37 moons
-`A rock that weighs 3 pounds on Earth would weigh 2.7 pounds on Uranus. How much would a 3 pound rock weigh on Uranus? `1.2 pounds `5.7 pounds `2.7 pounds `4.4 pounds `2.7 pounds
-`It takes 84 Earth years for Uranus to orbit the Sun. How many years does it take for Mercury to orbit the Sun? ‘84 years ‘25 years ‘121 years ‘77 years ‘84 years
-`Uranus temperature near the surface clouds is about -357 degrees Fahrenheit. What is the temperature on Uranus? ‘-357 degrees ‘-214 degrees ‘-503 degrees ‘-446 degrees ‘-357 degrees 
-`There may be an Ocean on the Surface of Uranus which is about 5,000 degrees. How hot do scientist believe the possible ocean on Uranus is? ‘5,000 degrees ‘700 degrees ‘9,000 degrees ‘2,500 degrees `5000 degrees
-`The planet is named after the Greek titan Uranus, the father of Kronos. Who is Uranus in Greek Mythology? `A human who fought against the titans `The father of Kronos `A pet dog `A mermaid `The father of Kronos
-`There are 1,600 mph winds on Uranus. How fast do the wind speeds reach on Uranus? `1,600 mph `1,000 mph `2,100 mph `There is no wind `1,600 mph
-`A day on Uranus is about 17 Earth hours (that’s how long it takes to rotate once). `How many hours does it take Uranus to rotate? ‘24 hours, The same as Earth ‘17 hours ‘2 hours ‘12 hours  ‘17 hours
-`Uranus is the third largest planet in the solar system. `Compared to the other planets, how big is the planet? `The biggest `The smallest `The third biggest `The second biggest `The third biggest
-`Uranus rotates east to west, which is the opposite of Earth. `Which way does Uranus rotate? `West to east, like Earth `North to south `South to north `East to west, opposite of Earth `East to west, opposite of Earth
-`The gravity on Neptune is 11.2 m/s² (meters per second). ‘What is the gravity on Neptune? ‘4.6 m/s² ‘22.9 m/s² `8.5 m/s²  ‘11.2 m/s² `11.2 m/s²
-`Mercury has 13 moons. How many moons does Mercury have? `9 moons `No moons `13 moons `21 moons `13 moons
-`A rock that weighs 3 pounds on Earth would weigh 3.4 pounds on Venus. How much would a 3 pound rock weigh on Venus? `3.4 pounds `1.8 pounds `2.2 pounds `7.5 pounds `3.4 pounds
-`It takes 165 Earth years for Neptune to orbit the Sun. How many years does it take for Neptune to orbit the Sun? ‘117 years ‘235 years ‘165 years ‘96 years ‘165 years
-`Neptune temperature stays around -360 degrees Fahrenheit. What is the temperature on Neptune? ‘-249 degrees ‘-360 degrees ‘-408 degrees ‘-305 degrees ‘-360 degrees 
-`Neptune’s core is about 12,600 degrees Fahrenheit. What is the temperature of Neptune’s core? ‘10,900 degrees ‘6,000 degrees ‘12,600 degrees ‘8,500 degrees `12,600 degrees
-`Named after the Roman god of the sea, Neptune. Who is Neptune in Roman Mythology? `The god of the sea `The god of the wind `The god of animals `The god of truth ‘The god of the sea
-`There are 900 mph winds on Neptune. How fast do the wind speeds reach on Neptune? `900 mph `1,300 mph `600 mph `There is no wind `900 mph
-`A day on Neptune is 16 Earth hours long. How many hours does it take for Neptune to rotate? ‘16 hours ‘40 hours ‘7 hours ‘21 hours ‘16 hours
-`Jupiter, Saturn, Uranus, and Neptune are all gas giant planets. `Which planet is NOT a gas giant planet in our solar system? `Pluto `Jupiter `Saturn `Uranus `Pluto
-`Neptune is the last planet in our solar system. `What is the last planet in our solar system? `Pluto `Jupiter `Neptune `Saturn `Neptune
-`The gravity on Pluto is 0.6 m/s² (meters per second). ‘What is the gravity on Pluto? ‘31.1 m/s² ‘0.6 m/s² `12.3 m/s²  ‘9.9 m/s² `0.6 m/s²
-`Mercury has 5 small moons. How many moons does Mercury have? `15 moons `8 moons `5 moons `2 moons `5 moons
-`A rock that weighs 3 pounds on Earth would weigh 0.2 pounds on Pluto. How much would a 3 pound rock weigh on Pluto? `0.9 pounds `1.5 pounds `3.1 pounds `6.8 pounds `0.2 pounds
-`It takes 248 Earth years for Pluto to orbit the Sun. How many Earth years does it take for Pluto to orbit the Sun? ‘248 years ‘139 years ‘316 years ‘187 years ‘248 years
-`Pluto reaches up only to -360 degrees Fahrenheit. What is the highest temperature on Pluto? ‘-258 degrees ‘-360 degrees ‘-459 degrees ‘-304 degrees ‘-360 degrees 
-`Pluto gets as cold as -400 degrees Fahrenheit. How cold does Pluto reach? ‘-387 degrees ‘-605 degrees ‘-400 degrees ‘-549 degrees `-400 degrees
-`Pluto is named after the Roman god of the underworld. Who is Pluto in Roman Mythology? `The god of friendship `The god of the underworld `The god of growth `There is no Roman god named Pluto ‘The god of the underworld
-`There are 23 mph winds on Pluto. How fast do the wind speeds reach on Pluto? `64 mph `81 mph `23 mph `70 mph `23 mph
-`It takes Pluto about 6.4 days to rotate. How many days does it take for Pluto to rotate? ‘6 days ‘17 days ‘42 days ‘29 days ‘6 days
-`Pluto is no longer considered a planet in our Solar System. `Which planet is Pluto in our Solar System? `It is no longer a planet `The 8th planet `The 10th planet `The 9th planet `It is no longer a planet
-`Pluto was downgraded from a planet to a dwarf planet in 2006. `Which type of planet is pluto? `A regular planet in our solar system `A mini planet `A dwarf planet `Pluto is a moon `A dwarf planet
+The gravity on the Moon is 1.6 m/s² (meters per second). `What is the gravity on the moon? `6.5 m/s² `1.6 m/s² `0.1 m/s²  `3.0 m/s² `1.6 m/s²
+The moon has no moons. `How many moons does the moon have? `3 moons `5 moons `2 moons `No moons `No moons
+A rock that weighs 3 pounds on Earth would weigh 0.5 pounds on the moon. `How much would a 3 pound rock weigh on the moon? `There is no weight on the moon `0.5 pounds `4 pounds `10 pounds `0.5 pounds
+It takes 27,000 Earth days for the moon to orbit (which means to completely circle) the Earth. `How many Earth days does it take for the moon to orbit the Earth? `22 `25 `35 `27 `27
+The moon reaches up to 212 degrees Fahrenheit. `How hot does it get on the moon? `250 degrees `212 degrees `170 degrees `146 degrees `212 degrees 
+The moon gets as cold as -279 degrees Fahrenheit. `How cold does the moon reach? `-244 degrees `-193 degrees `-310 degrees `-279 degrees `-279 degrees
+The moon has no name. `What is the moon’s name? `Marcus `Augustus `Athens `There is no name `There is no name
+There is no wind on the moon. `How fast do the wind speeds reach on the moon? `137 MPH `142 MPH `278 MPH `There is no wind `There is no wind
+It takes the moon 27 days to rotate. `How many days does it take for the moon to rotate? `35 days `27 days `48 days `19 days `27 days
+Our moon is the only moon in the solar system that we have not given a name to. Moon is not a name; it's a description of a solid object that is in orbit around another, larger object. `What is a moon? `An object that spins `Any object in space `A solid object that is in orbit around another, larger object `A block of cheese `A solid object that is in orbit around another, larger object
+Venus is the hottest planet in the solar system. `Which planet is the hottest in our solar system? `Mars `Pluto `Venus `Uranus `Venus
+The gravity on Mercury is 3.7 m/s² (meters per second). `What is the gravity on Mercury? `1.4 m/s² `2.9 m/s² `3.7 m/s²  `9.0 m/s² `3.7 m/s²
+Mercury has no moons. `How many moons does Mercury have? `9 moons `No moons `5 moons `4 moons `No moons
+A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mercury. `How much would a 3 pound rock weigh on the moon? `1.1 pounds `2.0 pounds `4.4 pounds `6.3 pounds `1.1 pounds
+It takes 88 Earth days for Mercury to orbit (which means to completely circle) the Sun. `How many Earth days does it take for Mercury to orbit the Sun? `88 days `65 days `115 days `77 days `88 days
+Mercury reaches up to 801 degrees Fahrenheit. `How hot does it get on Mercury? `856 degrees `903 degrees `801 degrees `678 degrees `801 degrees 
+Mercury gets as cold as -299 degrees Fahrenheit. `How cold does Mercury reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299 degrees
+Named Mercurius in Latin by the Romans because it appears to move so swiftly. `What is the Latin name for Mercury? `Mathus `Medelim `Mercurius `Mercury does not have a Latin name `Mercurius
+There is no wind on Mercury. `How fast do the wind speeds reach on Mercury? `35 MPH `109 MPH `76 MPH `There is no wind `There is no wind
+It takes Mercury 59 days to rotate. `How many days does it take for Mercury to rotate? `35 days `47 days `74 days `59 days `59 days
+Mercury was named for its speed. It travels 107,000 mph. `What was Mercury named for? `The planet’s immense speed `The size of the planet `The color of the planet `The temperature of the planet `The planet’s immense speed
+In order, the planets in our solar system are Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune. `Which order of the planets is correct? `Earth, Venus, Mercury, Saturn, Neptune, Mars, Uranus, and Jupiter `Pluto, Mars, Earth, Saturn, Mercury, Mars, Uranus, Neptune, and Jupiter `Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune `Uranus, Mercury, Neptune, Jupiter, Venus, Earth, Saturn, and Mars `Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, and Neptune
+The gravity on Venus is 8.9 m/s² (meters per second). `What is the gravity on Venus? `8.9 m/s² `1.5 m/s² `5.2 m/s²  `11.6 m/s² `8.9 m/s²
+Venus has no moons. `How many moons does Venus have? `10 moons `6 moons `No moons `3 moons `No moons
+A rock that weighs 3 pounds on Earth would weigh 2.7 pounds on Venus. `How much would a 3 pound rock weigh on Venus? `1.5 pounds `4.5 pounds `2.7 pounds `8.6 pounds `2.7 pounds
+It takes 225 Earth days for Venus to orbit (which means to completely circle) the Sun. `How many Earth days does it take for Mercury to orbit the Sun? `189 days `225 days `276 days `302 days `225 days
+Venus reaches up to 860 degrees Fahrenheit. `How hot does it get on Venus? `860 degrees `914 degrees `753 degrees `692 degrees `860 degrees 
+Venus gets as cold as -283 degrees Fahrenheit. `How cold does Venus reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299 degrees
+Venus is named after the Roman goddess of love. `Which goddess is Venus named after? `The goddess of happiness `The goddess of love `The goddess of time `The goddess of hugs `The goddess of love
+The winds on Venus have a speed of 249 mph. `How fast do the wind speeds reach on Venus? `165 mph `205 mph `367 mph `249 mph `249 mph
+It takes Venus 243 days to rotate. `How many days does it take for Venus to rotate? `87 days `243 days `164 days `123 days `243 days
+The surface of Venus is hot enough to melt lead. `Venus is so hot it can melt which of the following? `Plastic `Lead `Glass `All of these answers `All of these answers
+Only Mercury, Venus, Earth, and Mars are considered terrestrial planets. `Which planet is NOT terrestrial? `Venus `Jupiter `Mars `Mercury `Jupiter
+The gravity on Mars is 3.7 m/s² (meters per second). `What is the gravity on Mars? `3.7 m/s² `2.0 m/s² `5.2 m/s²  `8.5 m/s² `3.7 m/s²
+Mars has 2 moons. `How many moons does Mars have? `9 moons `No moons `2 moons `5 moons `2 moons
+A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mars. `How much would a 3 pound rock weigh on Mars? `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds
+It takes 687 Earth days for Mars to orbit (which means to completely circle) the Sun. `How many Earth days does it take for Mars to orbit the Sun? `687 days `453 days `513 days `400 days `453 days
+Mars reaches up to 68 degrees Fahrenheit. `How hot does it get on Mars? `93 degrees `55 degrees `68 degrees `152 degrees `68 degrees 
+Venus gets as cold as -283 degrees Fahrenheit. `How cold does Venus reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299 degrees
+Mars is named after the Roman god of war because it is red, like blood. `Why is Mars named after the god of war? `The planet is angry and throws rocks `The planet is red `Mars is the hottest planet `It is not named after the god of war `The planet is red
+The winds on Mars have a speed of 249 mph. `How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph `60 mph `60 mph
+It takes Mars about 1 Earth day to rotate. `How long is a day on Mars (or how long does it take to rotate)? `53 days `34 days `About an Earth day `3 days `About an Earth day
+The word planet comes from a ancient Greek word which means “Wanderer.” `The word planet was created from an Greek word which means what? `Wanderer `Star `Ship `Above `Wanderer
+A mountain on Mars, Olympus, stands about 3 times taller than Mount Everest, which is the tallest point on Earth. `What is the name of the mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan `Olympus `Plumuros `Olympus
+The gravity on Jupiter is 24.8 m/s² (meters per second). `What is the gravity on Jupiter? `80.1 m/s² `24.8 m/s² `35.5 m/s²  `16.7 m/s² `24.8 m/s²
+Jupiter has 50 moons. `How many moons does Jupiter have? `32 moons `50 moons `68 moons `27 moons `50 moons
+A rock that weighs 3 pounds on Earth would weigh 7.1 pounds on Jupiter. `How much would a 3 pound rock weigh on Jupiter? `6.3 pounds `4.0 pounds `7.1 pounds `8.2 pounds `7.1 pounds
+It takes about 12 years for Jupiter to orbit (which means to completely circle) the Sun. `About how many years does it take Jupiter to orbit the Sun? `12 years `3 years `1 year `77 years `8 years `12 years
+Jupiter reaches up to 70 degrees Fahrenheit. `How hot does it get on Jupiter? `50 degrees `70 degrees `85 degrees `64 degrees `70 degrees 
+Jupiter gets as cold as -229 degrees Fahrenheit. `How cold does Jupiter reach? `-229 degrees `-322 degrees `-184 degrees `-271 degrees `-229 degrees
+The Romans named Jupiter after the god of the sky and thunder. `What is the Romans believe Jupiter was the god of? `Water `Air and Dirt `Sky and Thunder `Change `Sky and Thunder
+Winds on Jupiter are 250 mph. `How fast do the wind speeds reach on Jupiter? `219 mph `187 mph `250 mph `There is no wind `250 mph
+It takes Jupiter about 10 hours to rotate. `How many hours does it take for Jupiter to rotate? `10 hours `27 hours `3 hours `45 hours `10 hours
+Scientist believes the core, or the very center, of Jupiter can reach up to about 63,000 degrees Fahrenheit. `How hot is the core of Jupiter? `58,000 degrees `63,000 degrees `47,000 degrees `70,000 degrees `63,000 degrees 
+Jupiter has the biggest moon in our solar system, named Ganymede. `What is the name of the largest moon in our solar system? `Ganymede `Gunther `Medeler `Pluto `Ganymede
+The gravity on Saturn is 10.4 m/s² (meters per second). `What is the gravity on Saturn? `2.7 m/s² `25.5 m/s² `3.9 m/s²  `10.4 m/s² `10.4 m/s²
+Saturn has 53 moons. `How many moons does Saturn have? `53 moons `60 moons `No moons `44 moons `53 moons
+A rock that weighs 3 pounds on Earth would weigh 7.1 pounds on Venus. `How much would a 3 pound rock weigh on Venus? `6.2 pounds `10.4 pounds `1.3 pounds `7.1 pounds `7.1 pounds
+Saturn takes 29.5 Earth years to orbit (which means to completely circle) the Sun. `How many years does it take for Jupiter to orbit the Sun? `56 years `29.5 years `89.5 years `21 years `29.5 years
+Saturn stays around -288 degrees Fahrenheit. `What is the normal temperature on Saturn? `-105 degrees `36 degrees `-288 degrees `-359 degrees `-288 degrees 
+Saturn gets most of it’s heat from its core, which is about 21,000 degrees. `How hot is the core of Saturn? `21,000 degrees `30,000 degrees `16,000 degrees `5,000 degrees `21,000 degrees
+Saturn was named after the Greek titan Luna Saturni. `Who is Saturn named after? `The Lunar Star `The roman goddess Lina Aturn `The Greek titan Luna Saturni `The person who discovered the planet `The Greek titan Luna Saturni
+The winds on Saturn reach 1100 mph. `How fast are the wind speeds on Saturn? `953 mph `1440 mph `2000 mph `1100 mph `1100 mph
+A day on Saturn is about 11 Earth hours (that’s how long it takes to rotate once). `How many hours does it take Saturn to rotate? `11 hours `1 hour `23 hours `18 hours `11 hours
+Venus is the closest planet to Earth. `Which planet is the closest to Earth? `Venus `Mars `Mercury `Neptune `Venus
+The Sun has the most mass in our solar system. `What has the most mass in our solar system? `Jupiter `Neptune `The Sun `Venus `The Sun
+The gravity on Uranus is 8.7 m/s² (meters per second). `What is the gravity on Uranus? `1.2 m/s² `5.1 m/s² `8.7 m/s²  `12.3 m/s² `8.7 m/s²
+Uranus has 37 moons. `How many moons does Uranus have? `9 moons `45 moons `24 moons `37 moons `37 moons
+A rock that weighs 3 pounds on Earth would weigh 2.7 pounds on Uranus. `How much would a 3 pound rock weigh on Uranus? `1.2 pounds `5.7 pounds `2.7 pounds `4.4 pounds `2.7 pounds
+It takes 84 Earth years for Uranus to orbit the Sun. `How many years does it take for Mercury to orbit the Sun? `84 years `25 years `121 years `77 years `84 years
+Uranus temperature near the surface clouds is about -357 degrees Fahrenheit. `What is the temperature on Uranus? `-357 degrees `-214 degrees `-503 degrees `-446 degrees `-357 degrees 
+There may be an Ocean on the Surface of Uranus which is about 5,000 degrees. `How hot do scientist believe the possible ocean on Uranus is? `5,000 degrees `700 degrees `9,000 degrees `2,500 degrees `5000 degrees
+The planet is named after the Greek titan Uranus, the father of Kronos. `Who is Uranus in Greek Mythology? `A human who fought against the titans `The father of Kronos `A pet dog `A mermaid `The father of Kronos
+There are 1,600 mph winds on Uranus. `How fast do the wind speeds reach on Uranus? `1,600 mph `1,000 mph `2,100 mph `There is no wind `1,600 mph
+A day on Uranus is about 17 Earth hours (that’s how long it takes to rotate once). `How many hours does it take Uranus to rotate? `24 hours, The same as Earth `17 hours `2 hours `12 hours  `17 hours
+Uranus is the third largest planet in the solar system. `Compared to the other planets, how big is the planet? `The biggest `The smallest `The third biggest `The second biggest `The third biggest
+Uranus rotates east to west, which is the opposite of Earth. `Which way does Uranus rotate? `West to east, like Earth `North to south `South to north `East to west, opposite of Earth `East to west, opposite of Earth
+The gravity on Neptune is 11.2 m/s² (meters per second). `What is the gravity on Neptune? `4.6 m/s² `22.9 m/s² `8.5 m/s²  `11.2 m/s² `11.2 m/s²
+Mercury has 13 moons. `How many moons does Mercury have? `9 moons `No moons `13 moons `21 moons `13 moons
+A rock that weighs 3 pounds on Earth would weigh 3.4 pounds on Venus. `How much would a 3 pound rock weigh on Venus? `3.4 pounds `1.8 pounds `2.2 pounds `7.5 pounds `3.4 pounds
+It takes 165 Earth years for Neptune to orbit the Sun. `How many years does it take for Neptune to orbit the Sun? `117 years `235 years `165 years `96 years `165 years
+Neptune temperature stays around -360 degrees Fahrenheit. `What is the temperature on Neptune? `-249 degrees `-360 degrees `-408 degrees `-305 degrees `-360 degrees 
+Neptune’s core is about 12,600 degrees Fahrenheit. `What is the temperature of Neptune’s core? `10,900 degrees `6,000 degrees `12,600 degrees `8,500 degrees `12,600 degrees
+Named after the Roman god of the sea, Neptune. `Who is Neptune in Roman Mythology? `The god of the sea `The god of the wind `The god of animals `The god of truth `The god of the sea
+There are 900 mph winds on Neptune. `How fast do the wind speeds reach on Neptune? `900 mph `1,300 mph `600 mph `There is no wind `900 mph
+A day on Neptune is 16 Earth hours long. `How many hours does it take for Neptune to rotate? `16 hours `40 hours `7 hours `21 hours `16 hours
+Jupiter, Saturn, Uranus, and Neptune are all gas giant planets. `Which planet is NOT a gas giant planet in our solar system? `Pluto `Jupiter `Saturn `Uranus `Pluto
+Neptune is the last planet in our solar system. `What is the last planet in our solar system? `Pluto `Jupiter `Neptune `Saturn `Neptune
+The gravity on Pluto is 0.6 m/s² (meters per second). `What is the gravity on Pluto? `31.1 m/s² `0.6 m/s² `12.3 m/s²  `9.9 m/s² `0.6 m/s²
+Mercury has 5 small moons. `How many moons does Mercury have? `15 moons `8 moons `5 moons `2 moons `5 moons
+A rock that weighs 3 pounds on Earth would weigh 0.2 pounds on Pluto. `How much would a 3 pound rock weigh on Pluto? `0.9 pounds `1.5 pounds `3.1 pounds `6.8 pounds `0.2 pounds
+It takes 248 Earth years for Pluto to orbit the Sun. `How many Earth years does it take for Pluto to orbit the Sun? `248 years `139 years `316 years `187 years `248 years
+Pluto reaches up only to -360 degrees Fahrenheit. `What is the highest temperature on Pluto? `-258 degrees `-360 degrees `-459 degrees `-304 degrees `-360 degrees 
+Pluto gets as cold as -400 degrees Fahrenheit. `How cold does Pluto reach? `-387 degrees `-605 degrees `-400 degrees `-549 degrees `-400 degrees
+Pluto is named after the Roman god of the underworld. `Who is Pluto in Roman Mythology? `The god of friendship `The god of the underworld `The god of growth `There is no Roman god named Pluto `The god of the underworld
+There are 23 mph winds on Pluto. `How fast do the wind speeds reach on Pluto? `64 mph `81 mph `23 mph `70 mph `23 mph
+It takes Pluto about 6.4 days to rotate. `How many days does it take for Pluto to rotate? `6 days `17 days `42 days `29 days `6 days
+Pluto is no longer considered a planet in our Solar System. `Which planet is Pluto in our Solar System? `It is no longer a planet `The 8th planet `The 10th planet `The 9th planet `It is no longer a planet
+Pluto was downgraded from a planet to a dwarf planet in 2006. `Which type of planet is pluto? `A regular planet in our solar system `A mini planet `A dwarf planet `Pluto is a moon `A dwarf planet

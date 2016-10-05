@@ -59,8 +59,6 @@ public class LandingDetectionManager : MonoBehaviour
             frontLanded = false;                                                //resets the landed bools
             endLanded = false;                                                  //resets the landed bools
 
-            print("BYE");
-
             DeathManager.DeathActions();                                        //DEATH OCCURS
         }
     }

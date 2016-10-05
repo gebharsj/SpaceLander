@@ -43,7 +43,6 @@ public class ShipControls : MonoBehaviour
             }
             else
             {
-                Debug.Log("Fuel has run out!");
                 //Trigger crash
             }
         }

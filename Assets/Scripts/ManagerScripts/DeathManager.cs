@@ -4,14 +4,12 @@ using UnityEngine.SceneManagement;
 
 public class DeathManager : MonoBehaviour {
 
-    [Tooltip("Where the player starts at.")]
-    public Transform startPosition;        //where the player should go
-
     static GameObject player;              //player, since there's only one
 
     private static bool isDelayed;         //checking if delay is happening
 
-    public int animationDelay;             //
+    [Tooltip("The delay before the level reloads")]
+    public int animationDelay;             //delay before the level reloads
 
     private static int staticDelay;
 
@@ -23,10 +21,6 @@ public class DeathManager : MonoBehaviour {
 
         if (player == null)
             Debug.LogError("There is no one tagged \"Player\".");
-
-        startPosition = GameObject.Find("StartPoint").GetComponent<Transform>();
-        if (startPosition == null)
-            Debug.LogError("Cannot find the startPosition");
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -40,7 +34,8 @@ public class DeathManager : MonoBehaviour {
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
         player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
-        SceneManager.LoadScene(1);
+        int currentScene = SceneManager.GetActiveScene().buildIndex;  //grabs the current scene
+        SceneManager.LoadScene(currentScene);                           //loads the current scene
     }
 
     static IEnumerator DeathDelay()

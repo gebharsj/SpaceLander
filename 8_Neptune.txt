@@ -1,11 +1,11 @@
-The gravity on Neptune is 11.2 m/s² (meters per second). `What is the gravity on Neptune? `4.6 m/s² `22.9 m/s² `8.5 m/s²  `11.2 m/s² `11.2 m/s²
-Neptune has 13 moons. `How many moons does Neptune have? `9 moons `No moons `13 moons `21 moons `13 moons
-A rock that weighs 3 pounds on Earth would weigh 3.4 pounds on Venus. `How much would a 3 pound rock weigh on Venus? `3.4 pounds `1.8 pounds `2.2 pounds `7.5 pounds `3.4 pounds
-It takes 165 Earth years for Neptune to orbit the Sun. `How many years does it take for Neptune to orbit the Sun? `117 years `235 years `165 years `96 years `165 years
+The gravity on Neptune is 11.2 m/s² (meters per second). `What is the gravity on Neptune? `4.6 m/s² `22.9 m/s² `8.5 m/s²  `11.2 m/s² `11.2 m/s² 
+Neptune has 13 moons. `How many moons does Neptune have? `9 moons `No moons `13 moons `21 moons `13 moons 
+A rock that weighs 3 pounds on Earth would weigh 3.4 pounds on Venus. `How much would a 3 pound rock weigh on Venus? `3.4 pounds `1.8 pounds `2.2 pounds `7.5 pounds `3.4 pounds 
+It takes 165 Earth years for Neptune to orbit the Sun. `How many years does it take for Neptune to orbit the Sun? `117 years `235 years `165 years `96 years `165 years 
 Neptune temperature stays around -360 degrees Fahrenheit. `What is the temperature on Neptune? `-249 degrees `-360 degrees `-408 degrees `-305 degrees `-360 degrees 
-Neptune’s core is about 12,600 degrees Fahrenheit. `What is the temperature of Neptune’s core? `10,900 degrees `6,000 degrees `12,600 degrees `8,500 degrees `12,600 degrees
-Named after the Roman god of the sea, Neptune. `Who is Neptune in Roman Mythology? `The god of the sea `The god of the wind `The god of animals `The god of truth `The god of the sea
-There are 900 mph winds on Neptune. `How fast do the wind speeds reach on Neptune? `900 mph `1,300 mph `600 mph `There is no wind `900 mph
-A day on Neptune is 16 Earth hours long. `How many hours does it take for Neptune to rotate? `16 hours `40 hours `7 hours `21 hours `16 hours
-Jupiter, Saturn, Uranus, and Neptune are all gas giant planets. `Which planet is NOT a gas giant planet in our solar system? `Pluto `Jupiter `Saturn `Uranus `Pluto
-Neptune is the last planet in our solar system. `What is the last planet in our solar system? `Pluto `Jupiter `Neptune `Saturn `Neptune
+Neptune’s core is about 12,600 degrees Fahrenheit. `What is the temperature of Neptune’s core? `10,900 degrees `6,000 degrees `12,600 degrees `8,500 degrees `12,600 degrees 
+Named after the Roman god of the sea, Neptune. `Who is Neptune in Roman Mythology? `The god of the sea `The god of the wind `The god of animals `The god of truth `The god of the sea 
+There are 900 mph winds on Neptune. `How fast do the wind speeds reach on Neptune? `900 mph `1,300 mph `600 mph `There is no wind `900 mph 
+A day on Neptune is 16 Earth hours long. `How many hours does it take for Neptune to rotate? `16 hours `40 hours `7 hours `21 hours `16 hours 
+Jupiter, Saturn, Uranus, and Neptune are all gas giant planets. `Which planet is NOT a gas giant planet in our solar system? `Pluto `Jupiter `Saturn `Uranus `Pluto 
+Neptune is the last planet in our solar system. `What is the last planet in our solar system? `Pluto `Jupiter `Neptune `Saturn `Neptune 

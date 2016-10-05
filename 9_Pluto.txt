@@ -1,11 +1,11 @@
-The gravity on Pluto is 0.6 m/s² (meters per second). `What is the gravity on Pluto? `31.1 m/s² `0.6 m/s² `12.3 m/s²  `9.9 m/s² `0.6 m/s²
-Pluto has 5 small moons. `How many moons does Pluto have? `15 moons `8 moons `5 moons `2 moons `5 moons
-A rock that weighs 3 pounds on Earth would weigh 0.2 pounds on Pluto. `How much would a 3 pound rock weigh on Pluto? `0.9 pounds `1.5 pounds `3.1 pounds `6.8 pounds `0.2 pounds
-It takes 248 Earth years for Pluto to orbit the Sun. `How many Earth years does it take for Pluto to orbit the Sun? `248 years `139 years `316 years `187 years `248 years
+The gravity on Pluto is 0.6 m/s² (meters per second). `What is the gravity on Pluto? `31.1 m/s² `0.6 m/s² `12.3 m/s²  `9.9 m/s² `0.6 m/s² 
+Pluto has 5 small moons. `How many moons does Pluto have? `15 moons `8 moons `5 moons `2 moons `5 moons 
+A rock that weighs 3 pounds on Earth would weigh 0.2 pounds on Pluto. `How much would a 3 pound rock weigh on Pluto? `0.9 pounds `1.5 pounds `3.1 pounds `6.8 pounds `0.2 pounds 
+It takes 248 Earth years for Pluto to orbit the Sun. `How many Earth years does it take for Pluto to orbit the Sun? `248 years `139 years `316 years `187 years `248 years 
 Pluto reaches up only to -360 degrees Fahrenheit. `What is the highest temperature on Pluto? `-258 degrees `-360 degrees `-459 degrees `-304 degrees `-360 degrees 
-Pluto gets as cold as -400 degrees Fahrenheit. `How cold does Pluto reach? `-387 degrees `-605 degrees `-400 degrees `-549 degrees `-400 degrees
-Pluto is named after the Roman god of the underworld. `Who is Pluto in Roman Mythology? `The god of friendship `The god of the underworld `The god of growth `There is no Roman god named Pluto `The god of the underworld
-There are 23 mph winds on Pluto. `How fast do the wind speeds reach on Pluto? `64 mph `81 mph `23 mph `70 mph `23 mph
-It takes Pluto about 6.4 days to rotate. `How many days does it take for Pluto to rotate? `6 days `17 days `42 days `29 days `6 days
-Pluto is no longer considered a planet in our Solar System. `Which planet is Pluto in our Solar System? `It is no longer a planet `The 8th planet `The 10th planet `The 9th planet `It is no longer a planet
-Pluto was downgraded from a planet to a dwarf planet in 2006. `Which type of planet is pluto? `A regular planet in our solar system `A mini planet `A dwarf planet `Pluto is a moon `A dwarf planet
+Pluto gets as cold as -400 degrees Fahrenheit. `How cold does Pluto reach? `-387 degrees `-605 degrees `-400 degrees `-549 degrees `-400 degrees 
+Pluto is named after the Roman god of the underworld. `Who is Pluto in Roman Mythology? `The god of friendship `The god of the underworld `The god of growth `There is no Roman god named Pluto `The god of the underworld 
+There are 23 mph winds on Pluto. `How fast do the wind speeds reach on Pluto? `64 mph `81 mph `23 mph `70 mph `23 mph 
+It takes Pluto about 6.4 days to rotate. `How many days does it take for Pluto to rotate? `6 days `17 days `42 days `29 days `6 days 
+Pluto is no longer considered a planet in our Solar System. `Which planet is Pluto in our Solar System? `It is no longer a planet `The 8th planet `The 10th planet `The 9th planet `It is no longer a planet 
+Pluto was downgraded from a planet to a dwarf planet in 2006. `Which type of planet is pluto? `A regular planet in our solar system `A mini planet `A dwarf planet `Pluto is a moon `A dwarf planet 

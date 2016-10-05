@@ -1,11 +1,11 @@
-The gravity on Mars is 3.7 m/s² (meters per second). `What is the gravity on Mars? `3.7 m/s² `2.0 m/s² `5.2 m/s²  `8.5 m/s² `3.7 m/s²
-Mars has 2 moons. `How many moons does Mars have? `9 moons `No moons `2 moons `5 moons `2 moons
-A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mars. `How much would a 3 pound rock weigh on Mars? `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds
-It takes 687 Earth days for Mars to orbit (which means to completely circle) the Sun. `How many Earth days does it take for Mars to orbit the Sun? `687 days `453 days `513 days `400 days `453 days
+The gravity on Mars is 3.7 m/s² (meters per second). `What is the gravity on Mars? `3.7 m/s² `2.0 m/s² `5.2 m/s²  `8.5 m/s² `3.7 m/s² 
+Mars has 2 moons. `How many moons does Mars have? `9 moons `No moons `2 moons `5 moons `2 moons 
+A rock that weighs 3 pounds on Earth would weigh 1.1 pounds on Mars. `How much would a 3 pound rock weigh on Mars? `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds 
+It takes 687 Earth days for Mars to orbit (which means to completely circle) the Sun. `How many Earth days does it take for Mars to orbit the Sun? `687 days `453 days `513 days `400 days `453 days 
 Mars reaches up to 68 degrees Fahrenheit. `How hot does it get on Mars? `93 degrees `55 degrees `68 degrees `152 degrees `68 degrees 
-Mars gets as cold as -283 degrees Fahrenheit. `How cold does Mars reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299 degrees
-Mars is named after the Roman god of war because it is red, like blood. `Why is Mars named after the god of war? `The planet is angry and throws rocks `The planet is red `Mars is the hottest planet `It is not named after the god of war `The planet is red
-The winds on Mars have a speed of 249 mph. `How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph `60 mph `60 mph
-It takes Mars about 1 Earth day to rotate. `How long is a day on Mars (or how long does it take to rotate)? `53 days `34 days `About an Earth day `3 days `About an Earth day
-The word planet comes from a ancient Greek word which means “Wanderer.” `The word planet was created from an Greek word which means what? `Wanderer `Star `Ship `Above `Wanderer
-A mountain on Mars, Olympus, stands about 3 times taller than Mount Everest, which is the tallest point on Earth. `What is the name of the mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan `Olympus `Plumuros `Olympus
+Mars gets as cold as -283 degrees Fahrenheit. `How cold does Mars reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299 degrees 
+Mars is named after the Roman god of war because it is red, like blood. `Why is Mars named after the god of war? `The planet is angry and throws rocks `The planet is red `Mars is the hottest planet `It is not named after the god of war `The planet is red 
+The winds on Mars have a speed of 249 mph. `How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph `60 mph `60 mph 
+It takes Mars about 1 Earth day to rotate. `How long is a day on Mars (or how long does it take to rotate)? `53 days `34 days `About an Earth day `3 days `About an Earth day 
+The word planet comes from a ancient Greek word which means “Wanderer.” `The word planet was created from an Greek word which means what? `Wanderer `Star `Ship `Above `Wanderer 
+A mountain on Mars, Olympus, stands about 3 times taller than Mount Everest, which is the tallest point on Earth. `What is the name of the mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan `Olympus `Plumuros `Olympus 

@@ -412,7 +412,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &113241601
 RectTransform:
   m_ObjectHideFlags: 0
@@ -560,6 +560,21 @@ Prefab:
     - target: {fileID: 1000013853327836, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
       propertyPath: m_Name
       value: Landing
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
@@ -2178,6 +2193,21 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
   m_IsPrefabParent: 0
@@ -2471,7 +2501,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &889571649
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3675,6 +3705,21 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000012507113156, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
   m_IsPrefabParent: 0
@@ -4178,6 +4223,11 @@ Prefab:
         type: 2}
       propertyPath: textFileName
       value: 1_Moon.txt
+      objectReference: {fileID: 0}
+    - target: {fileID: 82000011872481610, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
@@ -5445,6 +5495,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 49bfb97d0e327ce4c80ad6898db8d664, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  waitTime: 2
 --- !u!114 &1902557626
 MonoBehaviour:
   m_ObjectHideFlags: 0

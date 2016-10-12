@@ -2695,28 +2695,28 @@ Prefab:
       propertyPath: line
       value: "The gravity on the Moon is 1.6 m/s\xB2 (meters per second). `What is
         the gravity on the moon? `6.5 m/s\xB2 `1.6 m/s\xB2 `0.1 m/s\xB2  `3.0 m/s\xB2
-        `1.6 m/s\xB2 \r`\nThe moon has no moons. `How many moons does the moon have?
+        `1.6 m/s\xB2 `\r\nThe moon has no moons. `How many moons does the moon have?
         `3 moons `5 moons `2 moons `No moons `No moons `\r\nA rock that weighs 3 pounds
         on Earth would weigh 0.5 pounds on the moon. `How much would a 3 pound rock
         weigh on the moon? `There is no weight on the moon `0.5 pounds `4 pounds `10
-        pounds `0.5 pounds \r`\nIt takes 27 Earth days for the moon to orbit (which
+        pounds `0.5 pounds `\r\nIt takes 27,000 Earth days for the moon to orbit (which
         means to completely circle) the Earth. `How many Earth days does it take for
-        the moon to orbit the Earth? `22 `25 `35 `27 `27 \r`\nThe moon reaches up
+        the moon to orbit the Earth? `22 `25 `35 `27 `27 `\r\nThe moon reaches up
         to 212 degrees Fahrenheit. `How hot does it get on the moon? `250 degrees
-        `212 degrees `170 degrees `146 degrees `212 degrees  \r`\nThe moon gets as
+        `212 degrees `170 degrees `146 degrees `212 degrees `\r\nThe moon gets as
         cold as -279 degrees Fahrenheit. `How cold does the moon reach? `-244 degrees
-        `-193 degrees `-310 degrees `-279 degrees `-279 degrees \r`\nThe moon has
+        `-193 degrees `-310 degrees `-279 degrees `-279 degrees ` \r\nThe moon has
         no name. `What is the moon\u2019s name? `Marcus `Augustus `Athens `There is
-        no name `There is no name \r`\nThere is no wind on the moon. `How fast do
+        no name `There is no name `\r\nThere is no wind on the moon. `How fast do
         the wind speeds reach on the moon? `137 MPH `142 MPH `278 MPH `There is no
-        wind `There is no wind \r`\nIt takes the moon 27 days to rotate. `How many
+        wind `There is no wind `\r\nIt takes the moon 27 days to rotate. `How many
         days does it take for the moon to rotate? `35 days `27 days `48 days `19 days
-        `27 days \r`\nOur moon is the only moon in the solar system that we have not
+        `27 days `\r\nOur moon is the only moon in the solar system that we have not
         given a name to. Moon is not a name; it's a description of a solid object
         that is in orbit around another, larger object. `What is a moon? `An object
         that spins `Any object in space `A solid object that is in orbit around another,
         larger object `A block of cheese `A solid object that is in orbit around another,
-        larger object \r`\nVenus is the hottest planet in the solar system. `Which
+        larger object ` \r\nVenus is the hottest planet in the solar system. `Which
         planet is the hottest in our solar system? `Mars `Pluto `Venus `Uranus `Venus
         `"
       objectReference: {fileID: 0}

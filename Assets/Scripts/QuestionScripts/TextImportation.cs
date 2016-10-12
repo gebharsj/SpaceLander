@@ -6,26 +6,25 @@ using System;
 
 public class TextImportation : MonoBehaviour {
 
+    [Tooltip("The list of questions you have. Should appear as empty.")]
     public List<Questions> questionList;
-    public string textFileName;
     [TextArea(15, 30)]
     public string line;
 
+    [Tooltip("Where the text splits into different forms")]
     public char breakPoint;
 
 	// Use this for initialization
 	void Start ()
     {
-        int cnt = 0;
+        int cnt = 0;                        //in the index of where you are in the string
 
-        string[] temp = line.Split(breakPoint);
+        string[] temp = line.Split(breakPoint); //split the string into parts
 
-        //if (temp[temp.Length - 1] == null) break;
-
-        while (cnt < (temp.Length - 1))
+        while (cnt < (temp.Length - 1))         //while you are not at the end
         {
-            Questions qt = new Questions();
-            qt.Fact = temp[0 + cnt];
+            Questions qt = new Questions();     //declare new question
+            qt.Fact = temp[0 + cnt];            //fill it
             qt.Question = temp[1 + cnt];
             qt.OptionOne = temp[2 + cnt];
             qt.OptionTwo = temp[3 + cnt];
@@ -33,14 +32,7 @@ public class TextImportation : MonoBehaviour {
             qt.OptionFour = temp[5 + cnt];
             qt.Answer = temp[6 + cnt];
             questionList.Add(qt);
-            cnt += 7;
-            print(cnt);
+            cnt += 7;                           //increment cnt to keep up with the index
         }
-    //}
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
 	}
 }

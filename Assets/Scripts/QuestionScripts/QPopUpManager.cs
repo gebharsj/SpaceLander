@@ -78,7 +78,9 @@ public class QPopUpManager : MonoBehaviour {
     {
         string rightAnswer = txtImport.questionList[currentIndex].Answer;
         print("Right answer: " + rightAnswer);
+        print(rightAnswer.Length);
         print("Option Text: " + optionText);
+        print(optionText.Length);
         if (optionText.Equals(rightAnswer))
      //  if (string.Compare(optionText, rightAnswer))
         {

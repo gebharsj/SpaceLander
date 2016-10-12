@@ -5,13 +5,16 @@ using UnityEngine.SceneManagement;
 public class DeathManager : MonoBehaviour {
 
     [Tooltip("Where the player starts at.")]
-    public Transform startPosition;        //where the player should go
+    public Transform startPosition;         //where the player should go
 
-    static GameObject player;              //player, since there's only one
+    static Animator explosionAnim;          //Animator for the ship explosion
 
-    private static bool isDelayed;         //checking if delay is happening
+    static GameObject player;               //player, since there's only one
+    static GameObject leftEngine;           //leftEngine, since there's only one
 
-    public int animationDelay;             //
+    private static bool isDelayed;          //checking if delay is happening
+
+    public int animationDelay;              //
 
     private static int staticDelay;
 
@@ -19,7 +22,8 @@ public class DeathManager : MonoBehaviour {
     void Start ()
     {
         staticDelay = animationDelay;
-        player = GameObject.FindGameObjectWithTag("Player");                                                       //find player
+        player = GameObject.FindGameObjectWithTag("Player");        //find player
+        explosionAnim = player.GetComponent<Animator>();
 
         if (player == null)
             Debug.LogError("There is no one tagged \"Player\".");
@@ -39,9 +43,7 @@ public class DeathManager : MonoBehaviour {
 
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
-        player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
+        player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());        
     }
 
     static IEnumerator DeathDelay()
@@ -50,13 +52,15 @@ public class DeathManager : MonoBehaviour {
         {
             isDelayed = true;                                                   //prevents delay from happening twice
             player.GetComponent<ShipControls>().enabled = false;                //prevents player from moving when crashed
+            explosionAnim.SetBool("shouldExplode", true);
             yield return new WaitForSeconds(staticDelay);                       //delay for animation
 
             PointsManager.totalPoints = PointsManager.savedPoints;              //resets the points to the last level
 
             player.GetComponent<ShipControls>().enabled = true;                 //reset controls
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.buildIndex);
             isDelayed = false;                                                  //allows delay to happen again
         }
     }
 }
-

@@ -2711,6 +2711,39 @@ Prefab:
       propertyPath: gravityForce
       value: 3.7
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: line
+      value: "The gravity on Mercury is 3.7 m/s\xB2 (meters per second). `What is
+        the gravity on Mercury? `1.4 m/s\xB2 `2.9 m/s\xB2 `3.7 m/s\xB2  `9.0 m/s\xB2
+        `3.7 m/s\xB2 `\r\nMercury has no moons. `How many moons does Mercury have?
+        `9 moons `No moons `5 moons `4 moons `No moons `\r\nA rock that weighs 3 pounds
+        on Earth would weigh 1.1 pounds on Mercury. `How much would a 3 pound rock
+        weigh on the moon? `1.1 pounds `2.0 pounds `4.4 pounds `6.3 pounds `1.1 pounds
+        `\r\nIt takes 88 Earth days for Mercury to orbit (which means to completely
+        circle) the Sun. `How many Earth days does it take for Mercury to orbit the
+        Sun? `88 days `65 days `115 days `77 days `88 days `\r\nMercury reaches up
+        to 801 degrees Fahrenheit. `How hot does it get on Mercury? `856 degrees `903
+        degrees `801 degrees `678 degrees `801 degrees `\r\nMercury gets as cold as
+        -299 degrees Fahrenheit. `How cold does Mercury reach? `-299 degrees `-190
+        degrees `-347 degrees `-264 degrees `-299 degrees `\r\nNamed Mercurius in
+        Latin by the Romans because it appears to move so swiftly. `What is the Latin
+        name for Mercury? `Mathus `Medelim `Mercurius `Mercury does not have a Latin
+        name `Mercurius `\r\nThere is no wind on Mercury. `How fast do the wind speeds
+        reach on Mercury? `35 MPH `109 MPH `76 MPH `There is no wind `There is no
+        wind `\r\nIt takes Mercury 59 days to rotate. `How many days does it take
+        for Mercury to rotate? `35 days `47 days `74 days `59 days `59 days `\r\nMercury
+        was named for its speed. It travels 107,000 mph. `What was Mercury named for?
+        `The planet\u2019s immense speed `The size of the planet `The color of the
+        planet `The temperature of the planet `The planet\u2019s immense speed `\r\nIn
+        order, the planets in our solar system are Mercury, Venus, Earth, Mars, Jupiter,
+        Saturn, Uranus, and Neptune. `Which order of the planets is correct? `Earth,
+        Venus, Mercury, Saturn, Neptune, Mars, Uranus, and Jupiter `Pluto, Mars, Earth,
+        Saturn, Mercury, Mars, Uranus, Neptune, and Jupiter `Mercury, Venus, Earth,
+        Mars, Jupiter, Saturn, Uranus, and Neptune `Uranus, Mercury, Neptune, Jupiter,
+        Venus, Earth, Saturn, and Mars `Mercury, Venus, Earth, Mars, Jupiter, Saturn,
+        Uranus, and Neptune `"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0
@@ -3374,7 +3407,7 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 136, y: -19.6}
+  m_AnchoredPosition: {x: 136, y: -19.600098}
   m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1676962317

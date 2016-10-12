@@ -8,45 +8,35 @@ public class TextImportation : MonoBehaviour {
 
     public List<Questions> questionList;
     public string textFileName;
+    [TextArea(15, 30)]
+    public string line;
 
     public char breakPoint;
 
 	// Use this for initialization
-	void Start (){
-        try
-        {
-            using (StreamReader sr = new StreamReader(textFileName))
-            {
-                string line;
+	void Start ()
+    {
+        int cnt = 0;
 
-                while((line = sr.ReadLine()) != null)
-                {
-                    string[] temp = line.Split(breakPoint);
+        string[] temp = line.Split(breakPoint);
 
-                    if(temp.Length == 7)
-                    {
-                        Questions qt = new Questions();
-                        qt.Fact = temp[0];
-                        qt.Question = temp[1];
-                        qt.OptionOne = temp[2];
-                        qt.OptionTwo = temp[3];
-                        qt.OptionThree = temp[4];
-                        qt.OptionFour = temp[5];
-                        qt.Answer = temp[6];
-                        questionList.Add(qt);
-                    }
-                    else
-                    {
-                        Debug.LogError("Your text file has either too much, or too little information!");
-                    }
-                }
-            }
-        }
-        catch(Exception e)
+        //if (temp[temp.Length - 1] == null) break;
+
+        while (cnt < (temp.Length - 1))
         {
-            Debug.LogError("The file could not be read");
-            Debug.LogError(e.Message);
+            Questions qt = new Questions();
+            qt.Fact = temp[0 + cnt];
+            qt.Question = temp[1 + cnt];
+            qt.OptionOne = temp[2 + cnt];
+            qt.OptionTwo = temp[3 + cnt];
+            qt.OptionThree = temp[4 + cnt];
+            qt.OptionFour = temp[5 + cnt];
+            qt.Answer = temp[6 + cnt];
+            questionList.Add(qt);
+            cnt += 7;
+            print(cnt);
         }
+    //}
 	}
 	
 	// Update is called once per frame

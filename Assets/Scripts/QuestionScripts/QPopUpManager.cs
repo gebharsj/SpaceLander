@@ -34,7 +34,7 @@ public class QPopUpManager : MonoBehaviour {
 
         int length = txtImport.questionList.Count;  //gets the length of the questionList
 
-        int cnt = startingFacts;                                //grabs the amount of indexs that you want for facts
+        int cnt = 4;                                //grabs the amount of indexs that you want for facts
 
         while (cnt > 0)                             //while you try and grab it
         {

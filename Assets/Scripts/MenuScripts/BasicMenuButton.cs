@@ -8,6 +8,7 @@ public class BasicMenuButton : MonoBehaviour
     public void LoadLevel(string levelName) // choose a level to load
     {
         SceneManager.LoadScene(levelName);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByName(levelName));
     }
 
     public void RestartLevel() //restart the current level
@@ -30,7 +31,6 @@ public class BasicMenuButton : MonoBehaviour
     public void DelayedLoadLevel(string levelName) // choose a level to load
     {
         StartCoroutine(DelayLoadScene(levelName, waitTime));
-        //SceneManager.LoadScene(levelName);
     }
 
     IEnumerator Delay()

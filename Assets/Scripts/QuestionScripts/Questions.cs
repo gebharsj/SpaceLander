@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using System.Collections;
 
-public class Questions : MonoBehaviour {
+public class Questions : MonoBehaviour{
 
     string fact;
     string question;
@@ -53,17 +53,8 @@ public class Questions : MonoBehaviour {
         set { answer = value; }
     }
 
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 
-    public void DisplayQuestion()
+    /*public void DisplayQuestion()
     {
         Debug.Log(fact);
         Debug.Log(question);
@@ -72,5 +63,5 @@ public class Questions : MonoBehaviour {
         Debug.Log(optionThree);
         Debug.Log(optionFour);
         Debug.Log(answer);
-    }
+    }*/
 }

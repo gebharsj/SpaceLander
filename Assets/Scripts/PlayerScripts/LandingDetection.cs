@@ -1,12 +1,15 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class LandingDetection : MonoBehaviour {
 
     LandingDetectionManager manager; // the script that manages the other two
+    bool platformFinished = false;   // If the platform is no longer available
+    GameObject platform;            // get the platform
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         manager = transform.parent.GetComponent<LandingDetectionManager>(); //should be on the main ship
 
@@ -24,6 +27,8 @@ public class LandingDetection : MonoBehaviour {
                 manager.endLanded = true;
 
             manager.platformPoints = other.GetComponent<PlatformManager>().pointValue; //sets the point value in the manager
+            platformFinished = true;                    // If the platform has been landed on
+            platform = other.gameObject;                // Assign gameObject to a variable to bring to GUI method
         }
     }
 
@@ -48,6 +53,13 @@ public class LandingDetection : MonoBehaviour {
             //else
                 manager.endLanded = false;
         }
+    }
 
-    }    
+    void OnGUI()
+    {                                                      // Image can only be accessed through GUI
+        if (platformFinished)
+        {
+            platform.GetComponent<Image>().color = Color.red;           // Change the platform to red
+        }
+    }
 }

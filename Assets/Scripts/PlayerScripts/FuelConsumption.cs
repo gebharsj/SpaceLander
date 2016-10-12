@@ -33,15 +33,13 @@ public class FuelConsumption : MonoBehaviour
 
         fuelImage.fillAmount = (fuelAmount / 100.0f) * (fuelStartAmount / 10.0f);       //normalize the value of fuel amount so that it can be used for the images fillAmount, and updating the fuel amount
 
-        if (fuelAmount > 0)
+        if (fuelAmount > 0.0)
         {
             fuelAmount -= fuelCost / fuelCostDivider;       // Fuel is deprecated by the Fuel Used / fuelCostDivider
         }
         else
         {
             fuelAmount = 0;
-            //DeathManager.DeathActions();                  //not sure if that needs to be called here yet
-            // ---- Trigger end scene ------
         }
         return fuelAmount;                                  // Return the result
     }

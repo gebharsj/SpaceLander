@@ -2858,6 +2858,36 @@ Prefab:
       propertyPath: gravityForce
       value: 3.711
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: line
+      value: "The gravity on Mars is 3.7 m/s\xB2 (meters per second). `What is the
+        gravity on Mars? `3.7 m/s\xB2 `2.0 m/s\xB2 `5.2 m/s\xB2  `8.5 m/s\xB2 `3.7
+        m/s\xB2 `\r\nMars has 2 moons. `How many moons does Mars have? `9 moons `No
+        moons `2 moons `5 moons `2 moons `\r\nA rock that weighs 3 pounds on Earth
+        would weigh 1.1 pounds on Mars. `How much would a 3 pound rock weigh on Mars?
+        `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds `\r\nIt takes
+        687 Earth days for Mars to orbit (which means to completely circle) the Sun.
+        `How many Earth days does it take for Mars to orbit the Sun? `687 days `453
+        days `513 days `400 days `453 days `\r\nMars reaches up to 68 degrees Fahrenheit.
+        `How hot does it get on Mars? `93 degrees `55 degrees `68 degrees `152 degrees
+        `68 degrees `\r\nMars gets as cold as -283 degrees Fahrenheit. `How cold does
+        Mars reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299
+        degrees `\r\nMars is named after the Roman god of war because it is red, like
+        blood. `Why is Mars named after the god of war? `The planet is angry and throws
+        rocks `The planet is red `Mars is the hottest planet `It is not named after
+        the god of war `The planet is red `\r\nThe winds on Mars have a speed of 249
+        mph. `How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph
+        `60 mph `60 mph `\r\nIt takes Mars about 1 Earth day to rotate. `How long
+        is a day on Mars (or how long does it take to rotate)? `53 days `34 days `About
+        an Earth day `3 days `About an Earth day `\r\nThe word planet comes from a
+        ancient Greek word which means \u201CWanderer.\u201D `The word planet was
+        created from an Greek word which means what? `Wanderer `Star `Ship `Above
+        `Wanderer `\r\nA mountain on Mars, Olympus, stands about 3 times taller than
+        Mount Everest, which is the tallest point on Earth. `What is the name of the
+        mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan
+        `Olympus `Plumuros `Olympus `"
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0
@@ -3401,7 +3431,7 @@ RectTransform:
   m_RootOrder: 9
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 136, y: -19.6}
+  m_AnchoredPosition: {x: 136, y: -19.600098}
   m_SizeDelta: {x: 1000, y: 150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1676962317

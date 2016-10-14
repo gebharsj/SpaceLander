@@ -53,12 +53,7 @@ public class BasicUtilities<T> : MonoBehaviour
 
     public static void updateCoroutine(float waitTime)
     {
-        StartCoroutine(Delay(waitTime));
-    }
-
-    static IEnumerator Delay(float waitTime)
-    {
-        yield return new WaitForSeconds(waitTime);
+        //StartCoroutine(waitTime);
     }
 
     public static bool uniqInsert(T checkValue, List<T> valueList)

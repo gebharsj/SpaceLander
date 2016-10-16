@@ -12,8 +12,7 @@ public class BasicMenuButton : MonoBehaviour
 
     public void RestartLevel() //restart the current level
     {
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.name);
+        BasicUtilities.RestartLevel();
     }
 
     public void ToggleObject(GameObject turnOff, GameObject turnOn) //toggle an object on and another off

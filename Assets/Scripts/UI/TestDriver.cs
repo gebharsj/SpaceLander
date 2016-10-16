@@ -15,15 +15,14 @@ public class TestDriver : MonoBehaviour {
     {
         cnt++;
 
-        if (BasicUtilities<string>.onlyOnce("Hello"))
+        if (BasicUtilities.onlyOnce("Hello"))
             print("Cheese");
 
         if (cnt > 100)
         {
-            BasicUtilities<string>.resetOnce("Hello");
+            BasicUtilities.resetOnce("Hello");
             cnt = 0;
             print("reset");
         }
-
 	}
 }

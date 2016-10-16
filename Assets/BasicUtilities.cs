@@ -3,62 +3,28 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
-public class BasicUtilities<T> : MonoBehaviour
+public static class BasicUtilities
 {
-    static List<T> onlyOnceValues = new List<T>();
+    static List<string> onlyOnceValues = new List<string>();
 
-    public static int checkIncrement(int value, T[] array)
+    public static void ResetTransformation(this Transform trans)
     {
-        value++;
-
-        if (value >= array.Length)
-            value = 0;
-
-        return value;
+        trans.position = Vector3.zero;
+        trans.localRotation = Quaternion.identity;
+        trans.localScale = new Vector3(1, 1, 1);
     }
 
-    public static int checkIncrement(int value, List<T> array)
+    public static void RestartLevel()
     {
-        value++;
-
-        if (value >= array.Count)
-            value = 0;
-
-        return value;
+        Scene currentScene = SceneManager.GetActiveScene();
+        SceneManager.LoadScene(currentScene.name);
     }
 
-    public static int checkIncrement(int value, int maxValue)
+    public static bool onlyOnce(string checkValue)
     {
-        value++;
-
-        if (value >= maxValue)
-            value = 0;
-
-        return value;
-    }
-
-    public static bool onlyOnce(T checkValue)
-    {
-        return uniqInsert(checkValue, onlyOnceValues);
-    }
-
-    public static void resetOnce(T checkValue)
-    {
-        if (onlyOnceValues.Contains(checkValue))
-            onlyOnceValues.Remove(checkValue);
-        else
-            Debug.LogError("You tried to remove something that hasn't been added.");
-    }
-
-    public static void updateCoroutine(float waitTime)
-    {
-        //StartCoroutine(waitTime);
-    }
-
-    public static bool uniqInsert(T checkValue, List<T> valueList)
-    {
-        if (!valueList.Contains(checkValue))
+        if (!onlyOnceValues.Contains(checkValue))
         {
             onlyOnceValues.Add(checkValue);
             return true;
@@ -66,4 +32,76 @@ public class BasicUtilities<T> : MonoBehaviour
         else
             return false;
     }
+
+    public static void resetOnce(string checkValue)
+    {
+        if (onlyOnceValues.Contains(checkValue))
+            onlyOnceValues.Remove(checkValue);
+        else
+            Debug.LogError("You tried to remove something that hasn't been added.");
+    }
+
+    //============Convert Into Time Based Format==========
+    public static string textTime(float seconds)
+    {
+        int n = 0;
+        string outString = "error";
+        if (seconds < 0)
+        {
+            return "0 seconds";
+        }
+        if (seconds < 60)
+        {
+            n = (int)Mathf.Floor(seconds);
+            outString = n + " second" + s(n);
+            return outString;
+        }
+        if (seconds < 60 * 60)
+        {
+            n = (int)Mathf.Floor(seconds / 60);
+            outString = n + " minute" + s(n);
+            return outString;
+        }
+        if (seconds < 60 * 60 * 24)
+        {
+            n = (int)Mathf.Floor(seconds / 60 / 60);
+            outString = n + " hour" + s(n);
+            return outString;
+        }
+        if (seconds < 60 * 60 * 24 * 7)
+        {
+            n = (int)Mathf.Floor(seconds / 60 / 60 / 24);
+            outString = n + " day" + s(n);
+            return outString;
+        }
+        if (seconds < 60 * 60 * 24 * 31)
+        {
+            n = (int)Mathf.Floor(seconds / 60 / 60 / 24 / 7);
+            outString = n + " week" + s(n);
+            return outString;
+        }
+        if (seconds < 60 * 60 * 24 * 365)
+        {
+            n = (int)Mathf.Floor(seconds / 60 / 60 / 24 / 31);
+            outString = n + " month" + s(n);
+            return outString;
+        }
+        n = (int)Mathf.Floor(seconds / 60 / 60 / 24 / 365);
+        outString = n + " year" + s(n);
+        return outString;
+    }
+
+    static string s(int n)
+    {
+        if (n == 1)
+        {
+            return (" ");
+        }
+        else
+        {
+            return ("s");
+        }
+    }
+
+    ///public static void updateCoroutine(float waitTime)
 }

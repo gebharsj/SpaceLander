@@ -7,6 +7,7 @@ public class PopUp : MonoBehaviour {
 
     public Text[] text;                                 // Initialize the text
     public static bool secondTime;                     // prevents popup from opening multiple times
+    public GameObject pauseButton;
 
     void Start()
     {
@@ -33,7 +34,7 @@ public class PopUp : MonoBehaviour {
 
             Time.timeScale = 0;                                                         // No gravity or force or controls will be available.
 
-            for (int index = 1; index < text.Length; index++)                           //grabs the facts
+            for (int index = 1; index < text.Length -1; index++)                           //grabs the facts
             {
                 text[index].text = txtImport.questionList[qManager.randIndexs[(index - 1)]].Fact; 
             }
@@ -42,11 +43,11 @@ public class PopUp : MonoBehaviour {
             gameObject.SetActive(false);            // Disable the gameObject
     }
 
-    void Update() {
-        if (Input.anyKeyDown) {                     // When any key is pressed and let go...
-            Time.timeScale = 1;                     // Gravity, force, and controls can be applied.
-            gameObject.SetActive(false);            // Disable the gameObject
-            secondTime = true;
-        }
+    public void StartPlaying() {
+        
+        Time.timeScale = 1;                     // Gravity, force, and controls can be applied.
+        pauseButton.SetActive(true);
+        gameObject.SetActive(false);            // Disable the gameObject
+        secondTime = true;
     }
 }

@@ -8,7 +8,11 @@ public class Answered : MonoBehaviour {
     [Tooltip("The amount of time you wait to see correct/incorrect answers")]
     public float waitTime = 2;                                
     bool isWaiting;                                             //generic bool to stop the Coroutine
+    public GameObject pauseObjects;
+
     private QPopUpManager question;                            // Reference the Question pop up script
+
+
 
     void Start()
     {
@@ -38,6 +42,7 @@ public class Answered : MonoBehaviour {
     }
 
     public void ContinuePlaying() {
+        pauseObjects.SetActive(true);
         Time.timeScale = 1;                                                 // Gravity, force, and controls can be applied.
         for (int i = 0; i < question.answers.Length; i++) {
             question.answers[i].SetActive(true);                            // Once answered, set all buttons active for the next question.

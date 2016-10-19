@@ -15,6 +15,7 @@ public class LandingDetectionManager : MonoBehaviour
     public bool endLanded;          // the bool connected with the back
 
     public GameObject question;     // Needs to be public because inactive gameObjects cannot be "found"
+    public GameObject pauseObjects;
 
     [HideInInspector]
     public int platformPoints;      //the points coming from the platform you're landing
@@ -38,12 +39,12 @@ public class LandingDetectionManager : MonoBehaviour
         {
             if (!hasFinished)                                                                //activate win condition once
             {
-                Debug.Log("YOU'VE LANDED!");
                 PointsManager.AddPoints(platformPoints);                                    // add the points of the platform
                 int fuelRemaining = (int) FuelConsumption.fuelAmount;                       // get points for fuel
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
                 Time.timeScale = 0;                                                         // Stop time while question is being answered
                 question.SetActive(true);                                                   // Allow pop up to show
+                pauseObjects.SetActive(false);
                 question.GetComponent<QuestionDisplay>().ApplyText();                       // Use the questions and answers from the txt file.
                 hasFinished = true;                                                         
             }
@@ -54,7 +55,7 @@ public class LandingDetectionManager : MonoBehaviour
     {
         if (Mathf.Abs(this.GetComponent<Rigidbody2D>().velocity.y) > maxLandingSpeed)   //if speed is greater...
         {
-            Debug.LogError("WE'VE Crashed!");
+            pauseObjects.SetActive(true);
             hasFinished = true;                                                 //prevents score from being added
             frontLanded = false;                                                //resets the landed bools
             endLanded = false;                                                  //resets the landed bools

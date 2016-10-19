@@ -7,6 +7,8 @@ public class DeathManager : MonoBehaviour {
     [Tooltip("Where the player starts at.")]
     public Transform startPosition;        //where the player should go
 
+    public GameObject pauseObjects;
+
     static GameObject player;              //player, since there's only one
 
     private static bool isDelayed;         //checking if delay is happening
@@ -37,11 +39,12 @@ public class DeathManager : MonoBehaviour {
         }
     }
 
-    public static void DeathActions() //performs all the actions needed to be performed on death
+    public void DeathActions() //performs all the actions needed to be performed on death
     {
         player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
         Scene currentScene = SceneManager.GetActiveScene();
         SceneManager.LoadScene(currentScene.buildIndex);
+        pauseObjects.SetActive(true);
     }
 
     static IEnumerator DeathDelay()

@@ -9,7 +9,7 @@ public class QPopUpManager : MonoBehaviour {
     [Tooltip("The Buttons that you click on after the question")]
     public GameObject[] answeredButtons;                        // The buttons available after question is answered
 
-    public static int landingCount = 0;                               // How many times does the ship land on an active landing pad.
+    public static int landingCount = 0;                         // How many times does the ship land on an active landing pad.
 
     public static int currentIndex = 0;                         //the current index you're using for questions
     [Tooltip("The amount of starting facts in the beginning")]

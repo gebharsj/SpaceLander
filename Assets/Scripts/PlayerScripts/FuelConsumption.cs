@@ -25,12 +25,12 @@ public class FuelConsumption : MonoBehaviour
             Debug.LogError("Why is the starting amount of fuel 0?");
 
         ResetFuel(); //saves the value at the start for future use
+        PrintFuel();
     }
 
     public float FuelTank()
-    {                       // The current amount of fuel
-        fuelText.text = "Fuel: " + fuelAmount.ToString();
-
+    {
+        PrintFuel();        
         fuelImage.fillAmount = (fuelAmount / 100.0f) * (fuelStartAmount / 10.0f);       //normalize the value of fuel amount so that it can be used for the images fillAmount, and updating the fuel amount
 
         if (fuelAmount > 0.0)
@@ -42,6 +42,11 @@ public class FuelConsumption : MonoBehaviour
             fuelAmount = 0;
         }
         return fuelAmount;                                  // Return the result
+    }
+
+    public void PrintFuel()
+    {
+        fuelText.text = "Fuel: " + fuelAmount.ToString(); // The current amount of fuel
     }
 
     public static void ResetFuel()

@@ -4,14 +4,11 @@ using UnityEngine.SceneManagement;
 
 public class DeathManager : MonoBehaviour {
 
-    [Tooltip("Where the player starts at.")]
-    public Transform startPosition;        //where the player should go
-
     static GameObject player;              //player, since there's only one
 
     private static bool isDelayed;         //checking if delay is happening
 
-    public int animationDelay;             //
+    public int animationDelay;             //the time for the animation to finish
 
     private static int staticDelay;
 
@@ -23,10 +20,6 @@ public class DeathManager : MonoBehaviour {
 
         if (player == null)
             Debug.LogError("There is no one tagged \"Player\".");
-
-        startPosition = GameObject.Find("StartPoint").GetComponent<Transform>();
-        if (startPosition == null)
-            Debug.LogError("Cannot find the startPosition");
 	}
 
     void OnTriggerEnter2D(Collider2D other)
@@ -40,8 +33,6 @@ public class DeathManager : MonoBehaviour {
     public static void DeathActions() //performs all the actions needed to be performed on death
     {
         player.GetComponent<DeathManager>().StartCoroutine(DeathDelay());
-        Scene currentScene = SceneManager.GetActiveScene();
-        SceneManager.LoadScene(currentScene.buildIndex);
     }
 
     static IEnumerator DeathDelay()
@@ -53,8 +44,11 @@ public class DeathManager : MonoBehaviour {
             yield return new WaitForSeconds(staticDelay);                       //delay for animation
 
             PointsManager.totalPoints = PointsManager.savedPoints;              //resets the points to the last level
+            print(PointsManager.savedPoints);
 
             player.GetComponent<ShipControls>().enabled = true;                 //reset controls
+            Scene currentScene = SceneManager.GetActiveScene();
+            SceneManager.LoadScene(currentScene.buildIndex);
             isDelayed = false;                                                  //allows delay to happen again
         }
     }

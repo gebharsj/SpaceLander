@@ -38,13 +38,13 @@ public class LandingDetectionManager : MonoBehaviour
         {
             if (!hasFinished)                                                                //activate win condition once
             {
+                QPopUpManager.landingCount++;                                               // Keeps track of how many platforms you've landed on
                 PointsManager.AddPoints(platformPoints);                                    // add the points of the platform
                 int fuelRemaining = (int) FuelConsumption.fuelAmount;                       // get points for fuel
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
                 Time.timeScale = 0;                                                         // Stop time while question is being answered
                 question.SetActive(true);                                                   // Allow pop up to show
                 question.GetComponent<QuestionDisplay>().ApplyText();                       // Use the questions and answers from the txt file.
-                QPopUpManager.landingCount++;                                               // Keeps track of how many platforms you've landed on
                 hasFinished = true;                                                         
             }
         }

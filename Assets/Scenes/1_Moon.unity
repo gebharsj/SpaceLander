@@ -419,6 +419,11 @@ Prefab:
       propertyPath: m_Name
       value: Landing
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011058767754, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: pointValue
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
   m_IsPrefabParent: 0
@@ -1484,6 +1489,11 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 114000011058767754, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: pointValue
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}
   m_IsPrefabParent: 0
@@ -2399,6 +2409,11 @@ Prefab:
         type: 2}
       propertyPath: m_LocalScale.y
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000011058767754, guid: 91b84e8bd81857d43b496c2c3b2d4481,
+        type: 2}
+      propertyPath: pointValue
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91b84e8bd81857d43b496c2c3b2d4481, type: 2}

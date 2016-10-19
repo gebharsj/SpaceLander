@@ -26,7 +26,7 @@ public class LandingDetection : MonoBehaviour {
             else
                 manager.endLanded = true;
 
-            manager.platformPoints = other.GetComponent<PlatformManager>().pointValue; //sets the point value in the manager
+            manager.platformPoints = other.GetComponent<PlatformManager>().pointValue * QPopUpManager.landingCount; //sets the point value in the manager
             platformFinished = true;                    // If the platform has been landed on
             platform = other.gameObject;                // Assign gameObject to a variable to bring to GUI method
         }

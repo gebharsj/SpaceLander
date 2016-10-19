@@ -4064,7 +4064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4cec2d679f8937946b611c428f88f64f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxLandingSpeed: 50
+  maxLandingSpeed: 15
   animationDelay: 2
   frontLanded: 0
   endLanded: 0

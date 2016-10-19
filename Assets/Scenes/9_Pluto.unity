@@ -2691,6 +2691,34 @@ Prefab:
       propertyPath: gravityForce
       value: 0.62
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: line
+      value: "The gravity on Pluto is 0.6 m/s\xB2 (meters per second). `What is the
+        gravity on Pluto? `31.1 m/s\xB2 `0.6 m/s\xB2 `12.3 m/s\xB2  `9.9 m/s\xB2 `0.6
+        m/s\xB2 \r\nPluto has 5 small moons. `How many moons does Pluto have? `15
+        moons `8 moons `5 moons `2 moons `5 moons \r\nA rock that weighs 3 pounds
+        on Earth would weigh 0.2 pounds on Pluto. `How much would a 3 pound rock weigh
+        on Pluto? `0.9 pounds `1.5 pounds `3.1 pounds `6.8 pounds `0.2 pounds \r\nIt
+        takes 248 Earth years for Pluto to orbit the Sun. `How many Earth years does
+        it take for Pluto to orbit the Sun? `248 years `139 years `316 years `187
+        years `248 years \r\nPluto reaches up only to -360 degrees Fahrenheit. `What
+        is the highest temperature on Pluto? `-258 degrees `-360 degrees `-459 degrees
+        `-304 degrees `-360 degrees \r\nPluto gets as cold as -400 degrees Fahrenheit.
+        `How cold does Pluto reach? `-387 degrees `-605 degrees `-400 degrees `-549
+        degrees `-400 degrees \r\nPluto is named after the Roman god of the underworld.
+        `Who is Pluto in Roman Mythology? `The god of friendship `The god of the underworld
+        `The god of growth `There is no Roman god named Pluto `The god of the underworld
+        \r\nThere are 23 mph winds on Pluto. `How fast do the wind speeds reach on
+        Pluto? `64 mph `81 mph `23 mph `70 mph `23 mph \r\nIt takes Pluto about 6.4
+        days to rotate. `How many days does it take for Pluto to rotate? `6 days `17
+        days `42 days `29 days `6 days \r\nPluto is no longer considered a planet
+        in our Solar System. `Which planet is Pluto in our Solar System? `It is no
+        longer a planet `The 8th planet `The 10th planet `The 9th planet `It is no
+        longer a planet \r\nPluto was downgraded from a planet to a dwarf planet in
+        2006. `Which type of planet is pluto? `A regular planet in our solar system
+        `A mini planet `A dwarf planet `Pluto is a moon `A dwarf planet "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0
@@ -3458,7 +3486,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f7653f0d46deef46962bd15fd3f429a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

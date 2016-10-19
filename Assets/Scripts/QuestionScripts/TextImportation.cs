@@ -6,51 +6,32 @@ using System;
 
 public class TextImportation : MonoBehaviour {
 
+    [Tooltip("The list of questions you have. Should appear as empty.")]
     public List<Questions> questionList;
-    public string textFileName;
+    [TextArea(15, 30)]
+    public string line;
 
+    [Tooltip("Where the text splits into different forms")]
     public char breakPoint;
 
 	// Use this for initialization
 	void Start (){
-        try
-        {
-            using (StreamReader sr = new StreamReader(textFileName))
-            {
-                string line;
+        int cnt = 0;                        //in the index of where you are in the string
 
-                while((line = sr.ReadLine()) != null)
-                {
-                    string[] temp = line.Split(breakPoint);
+        string[] temp = line.Split(new char[] { breakPoint, '\n' }); //split the string into parts
 
-                    if(temp.Length == 7)
-                    {
-                        Questions qt = new Questions();
-                        qt.Fact = temp[0];
-                        qt.Question = temp[1];
-                        qt.OptionOne = temp[2];
-                        qt.OptionTwo = temp[3];
-                        qt.OptionThree = temp[4];
-                        qt.OptionFour = temp[5];
-                        qt.Answer = temp[6];
-                        questionList.Add(qt);
-                    }
-                    else
-                    {
-                        Debug.LogError("Your text file has either too much, or too little information!");
-                    }
-                }
-            }
-        }
-        catch(Exception e)
+        while (cnt < (temp.Length - 1))         //while you are not at the end
         {
-            Debug.LogError("The file could not be read");
-            Debug.LogError(e.Message);
+            Questions qt = new Questions();     //declare new question
+            qt.Fact = temp[0 + cnt];            //fill it
+            qt.Question = temp[1 + cnt];
+            qt.OptionOne = temp[2 + cnt];
+            qt.OptionTwo = temp[3 + cnt];
+            qt.OptionThree = temp[4 + cnt];
+            qt.OptionFour = temp[5 + cnt];
+            qt.Answer = temp[6 + cnt];
+            questionList.Add(qt);
+            cnt += 7;                           //increment cnt to keep up with the index
         }
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
+    }
 }

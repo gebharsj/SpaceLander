@@ -2858,6 +2858,36 @@ Prefab:
       propertyPath: gravityForce
       value: 3.711
       objectReference: {fileID: 0}
+    - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: line
+      value: "The gravity on Mars is 3.7 m/s\xB2 (meters per second). `What is the
+        gravity on Mars? `3.7 m/s\xB2 `2.0 m/s\xB2 `5.2 m/s\xB2  `8.5 m/s\xB2 `3.7
+        m/s\xB2 \r\nMars has 2 moons. `How many moons does Mars have? `9 moons `No
+        moons `2 moons `5 moons `2 moons \r\nA rock that weighs 3 pounds on Earth
+        would weigh 1.1 pounds on Mars. `How much would a 3 pound rock weigh on Mars?
+        `1.1 pounds `2.6 pounds `0.3 pounds `6.7 pounds `1.1 pounds \r\nIt takes 687
+        Earth days for Mars to orbit (which means to completely circle) the Sun. `How
+        many Earth days does it take for Mars to orbit the Sun? `687 days `453 days
+        `513 days `400 days `453 days \r\nMars reaches up to 68 degrees Fahrenheit.
+        `How hot does it get on Mars? `93 degrees `55 degrees `68 degrees `152 degrees
+        `68 degrees \r\nMars gets as cold as -283 degrees Fahrenheit. `How cold does
+        Mars reach? `-299 degrees `-190 degrees `-347 degrees `-264 degrees `-299
+        degrees \r\nMars is named after the Roman god of war because it is red, like
+        blood. `Why is Mars named after the god of war? `The planet is angry and throws
+        rocks `The planet is red `Mars is the hottest planet `It is not named after
+        the god of war `The planet is red \r\nThe winds on Mars have a speed of 249
+        mph. `How fast do the wind speeds reach on Mars? `99 mph `124 mph `230 mph
+        `60 mph `60 mph \r\nIt takes Mars about 1 Earth day to rotate. `How long is
+        a day on Mars (or how long does it take to rotate)? `53 days `34 days `About
+        an Earth day `3 days `About an Earth day \r\nThe word planet comes from a
+        ancient Greek word which means \u201CWanderer.\u201D `The word planet was
+        created from an Greek word which means what? `Wanderer `Star `Ship `Above
+        `Wanderer \r\nA mountain on Mars, Olympus, stands about 3 times taller than
+        Mount Everest, which is the tallest point on Earth. `What is the name of the
+        mountain on Mars that is 3 times larger than Mount Everest? `Targus `Titan
+        `Olympus `Plumuros `Olympus "
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
   m_IsPrefabParent: 0
@@ -3034,7 +3064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6f980af8690c4492bf878e6ef6d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windSpeed: 1.5
+  windSpeed: 1.25
 --- !u!1 &1618837429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3475,7 +3505,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f7653f0d46deef46962bd15fd3f429a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

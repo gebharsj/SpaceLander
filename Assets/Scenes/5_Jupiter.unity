@@ -523,7 +523,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6f980af8690c4492bf878e6ef6d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windSpeed: 1.5
+  windSpeed: 0.75
 --- !u!1 &154407953
 GameObject:
   m_ObjectHideFlags: 0
@@ -994,7 +994,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6f980af8690c4492bf878e6ef6d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windSpeed: -1.5
+  windSpeed: -0.75
 --- !u!1 &546167513
 GameObject:
   m_ObjectHideFlags: 0
@@ -2965,7 +2965,35 @@ Prefab:
     - target: {fileID: 114000011423273942, guid: 45a630fc0c3902b4083c3f4837c0be1a,
         type: 2}
       propertyPath: gravityForce
-      value: 24.79
+      value: 15
+      objectReference: {fileID: 0}
+    - target: {fileID: 114000010258121068, guid: 45a630fc0c3902b4083c3f4837c0be1a,
+        type: 2}
+      propertyPath: line
+      value: "The gravity on Jupiter is 24.8 m/s\xB2 (meters per second). `What is
+        the gravity on Jupiter? `80.1 m/s\xB2 `24.8 m/s\xB2 `35.5 m/s\xB2  `16.7 m/s\xB2
+        `24.8 m/s\xB2 \r\nJupiter has 50 moons. `How many moons does Jupiter have?
+        `32 moons `50 moons `68 moons `27 moons `50 moons \r\nA rock that weighs 3
+        pounds on Earth would weigh 7.1 pounds on Jupiter. `How much would a 3 pound
+        rock weigh on Jupiter? `6.3 pounds `4.0 pounds `7.1 pounds `8.2 pounds `7.1
+        pounds \r\nIt takes about 12 years for Jupiter to orbit (which means to completely
+        circle) the Sun. `About how many years does it take Jupiter to orbit the Sun?
+        `12 years `3 years `1 year `77 years `8 years `12 years \r\nJupiter reaches
+        up to 70 degrees Fahrenheit. `How hot does it get on Jupiter? `50 degrees
+        `70 degrees `85 degrees `64 degrees `70 degrees  \r\nJupiter gets as cold
+        as -229 degrees Fahrenheit. `How cold does Jupiter reach? `-229 degrees `-322
+        degrees `-184 degrees `-271 degrees `-229 degrees \r\nThe Romans named Jupiter
+        after the god of the sky and thunder. `What is the Romans believe Jupiter
+        was the god of? `Water `Air and Dirt `Sky and Thunder `Change `Sky and Thunder
+        \r\nWinds on Jupiter are 250 mph. `How fast do the wind speeds reach on Jupiter?
+        `219 mph `187 mph `250 mph `There is no wind `250 mph \r\nIt takes Jupiter
+        about 10 hours to rotate. `How many hours does it take for Jupiter to rotate?
+        `10 hours `27 hours `3 hours `45 hours `10 hours \r\nScientist believes the
+        core, or the very center, of Jupiter can reach up to about 63,000 degrees
+        Fahrenheit. `How hot is the core of Jupiter? `58,000 degrees `63,000 degrees
+        `47,000 degrees `70,000 degrees `63,000 degrees \r\nJupiter has the biggest
+        moon in our solar system, named Ganymede. `What is the name of the largest
+        moon in our solar system? `Ganymede `Gunther `Medeler `Pluto `Ganymede "
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 45a630fc0c3902b4083c3f4837c0be1a, type: 2}
@@ -3143,7 +3171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6bb6f980af8690c4492bf878e6ef6d8e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  windSpeed: 1.5
+  windSpeed: 0.75
 --- !u!1 &1618837429
 GameObject:
   m_ObjectHideFlags: 0
@@ -3586,7 +3614,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 2f7653f0d46deef46962bd15fd3f429a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

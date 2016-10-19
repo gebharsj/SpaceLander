@@ -4,14 +4,21 @@ using System.Collections.Generic;
 
 public class QPopUpManager : MonoBehaviour {
 
+    [Tooltip("All the Choices for the Answer")]
     public GameObject[] answers;                                // Array of all the answer buttons
+    [Tooltip("The Buttons that you click on after the question")]
     public GameObject[] answeredButtons;                        // The buttons available after question is answered
 
-    private int landingCount = 0;                               // How many times does the ship land on an active landing pad.
+    public static int landingCount = 0;                               // How many times does the ship land on an active landing pad.
 
     public static int currentIndex = 0;                         //the current index you're using for questions
     [Tooltip("The amount of starting facts in the beginning")]
     public int startingFacts = 4;                               //amt of starting facts
+
+    [HideInInspector]
+    public static int correctlyAnswered = 0;                    //keeps track of the amount correct
+    [HideInInspector]
+    public static int incorrectlyAnswered = 0;                  //keeps track of the amount incorrect
 
     public List<int> randIndexs = new List<int>();              //the list of arrays
     static List<int> staticIndexs = new List<int>();            //storing static arrays
@@ -21,6 +28,9 @@ public class QPopUpManager : MonoBehaviour {
 
     void Start()
     {
+        landingCount = 0; //reset landingCount
+        correctlyAnswered = 0;
+        incorrectlyAnswered = 0;
         //=================Grab the Components================
         txtImport = GetComponent<TextImportation>();
 
@@ -77,19 +87,18 @@ public class QPopUpManager : MonoBehaviour {
    public void CheckIfCorrect(string optionText)        //brings in the answer you clicked on
     {
         string rightAnswer = txtImport.questionList[currentIndex].Answer;
-        print("Right answer: " + rightAnswer);
-        print("Option Text: " + optionText);
         if (optionText.Equals(rightAnswer))
-     //  if (string.Compare(optionText, rightAnswer))
         {
-            print("CORRECT!");
             FuelConsumption.fuelAmount += fuel.platformAddition;            // adds the amount of fuel dictated
 
             if (FuelConsumption.fuelAmount > fuel.fuelStartAmount)          //if you go over, goes back to the max
                 FuelConsumption.fuelAmount = fuel.fuelStartAmount;
 
             fuel.fuelText.text = "Fuel: " + FuelConsumption.fuelAmount;     //simple text to show
+            correctlyAnswered++;
         }
+        else
+            incorrectlyAnswered++;
 
         ChangeColor(rightAnswer);
     }

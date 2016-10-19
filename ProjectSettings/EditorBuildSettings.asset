@@ -27,3 +27,5 @@ EditorBuildSettings:
     path: Assets/Scenes/9_Pluto.unity
   - enabled: 1
     path: Assets/Scenes/WinScreen.unity
+  - enabled: 1
+    path: Assets/Scenes/testIntro.unity

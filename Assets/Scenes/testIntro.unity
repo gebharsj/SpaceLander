@@ -1997,6 +1997,12 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013696856596, guid: db5babc17193a0447a1deb45f226c637,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db5babc17193a0447a1deb45f226c637, type: 2}
   m_IsPrefabParent: 0
@@ -2966,6 +2972,12 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 1.25
       objectReference: {fileID: 0}
+    - target: {fileID: 114000013696856596, guid: db5babc17193a0447a1deb45f226c637,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db5babc17193a0447a1deb45f226c637, type: 2}
   m_IsPrefabParent: 0
@@ -3267,6 +3279,12 @@ Prefab:
       propertyPath: m_FontData.m_Font
       value: 
       objectReference: {fileID: 12800000, guid: 51a552dd20ca42d49a45c592dc2c7eec,
+        type: 3}
+    - target: {fileID: 114000013696856596, guid: db5babc17193a0447a1deb45f226c637,
+        type: 2}
+      propertyPath: m_Sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: f272ef8ef04d0754389ba32ce929927e,
         type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: db5babc17193a0447a1deb45f226c637, type: 2}

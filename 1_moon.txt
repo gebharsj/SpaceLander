@@ -2,7 +2,7 @@ The gravity on the Moon is 1.6 m/s² (meters per second). `What is the gravity on
 The moon has no moons. `How many moons does the moon have? `3 moons `5 moons `2 moons `No moons `No moons 
 A rock that weighs 3 pounds on Earth would weigh 0.5 pounds on the moon. `How much would a 3 pound rock weigh on the moon? `There is no weight on the moon `0.5 pounds `4 pounds `10 pounds `0.5 pounds 
 It takes 27 Earth days for the moon to orbit (which means to completely circle) the Earth. `How many Earth days does it take for the moon to orbit the Earth? `22 `25 `35 `27 `27 
-The moon reaches up to 212 degrees Fahrenheit. `How hot does it get on the moon? `250 degrees `212 degrees `170 degrees `146 degrees `212 degrees  
+The moon reaches up to 212 degrees Fahrenheit. `How hot does it get on the moon? `250 degrees `212 degrees `170 degrees `146 degrees `212 degrees 
 The moon gets as cold as -279 degrees Fahrenheit. `How cold does the moon reach? `-244 degrees `-193 degrees `-310 degrees `-279 degrees `-279 degrees 
 The moon has no name. `What is the moon’s name? `Marcus `Augustus `Athens `There is no name `There is no name 
 There is no wind on the moon. `How fast do the wind speeds reach on the moon? `137 MPH `142 MPH `278 MPH `There is no wind `There is no wind 

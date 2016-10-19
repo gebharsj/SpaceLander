@@ -30,6 +30,7 @@ public class TextImportation : MonoBehaviour {
             qt.OptionThree = temp[4 + cnt];
             qt.OptionFour = temp[5 + cnt];
             qt.Answer = temp[6 + cnt];
+            qt.DisplayQuestion();
             questionList.Add(qt);
             cnt += 7;                           //increment cnt to keep up with the index
         }

@@ -17,7 +17,7 @@ public class InformationSending : MonoBehaviour
 
     void Start()
     {
-        //StartCoroutine(SendInfoCurrency());
+        StartCoroutine(SendInfoCurrency());
         StartCoroutine(SendInfoKidsKash());
     }
 
@@ -25,8 +25,8 @@ public class InformationSending : MonoBehaviour
     { 
         InformationSending myObject = new InformationSending();
         myObject.game_name = "Rocket Lander";
-        myObject.kids_id = 3951625;
-        myObject.num_points = 500;
+        myObject.kids_id = 3951627;
+        myObject.num_points = 0;
 
         string json = JsonUtility.ToJson(myObject);
 
@@ -34,8 +34,6 @@ public class InformationSending : MonoBehaviour
 
         UnityWebRequest www = UnityWebRequest.Get(URLVP + curr + "?game_name=" + myObject.game_name + "&kids_id=" + myObject.kids_id + "&num_points=" + myObject.num_points);
 
-        print(www.url);
-        //yield return null;
         yield return www.Send();
 
         if (www.isError)
@@ -53,8 +51,8 @@ public class InformationSending : MonoBehaviour
     {
         InformationSending myOtherObject = new InformationSending();
         myOtherObject.game_name = "Rocket Lander";
-        myOtherObject.kids_id = 3951625;
-        myOtherObject.num_kash = 50;
+        myOtherObject.kids_id = 3951626;
+        myOtherObject.num_kash = 5;
 
         string json = JsonUtility.ToJson(myOtherObject);
 

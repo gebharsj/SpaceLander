@@ -129,7 +129,6 @@ public class QPopUpManager : MonoBehaviour {
             answers[i].SetActive(false);                        // disable it ( Will eventually change color)
         }
 
-        landingCount++;                                         // Increment to count the landing
         if (landingCount < 3)                                   // If all the platforms are not landed upon
         {
             for (int i = 0; i < answeredButtons.Length; i++)

@@ -21,6 +21,7 @@ GameObject:
   - 224: {fileID: 224000012307411178}
   - 222: {fileID: 222000010970374368}
   - 114: {fileID: 114000011106444516}
+  - 114: {fileID: 114000011280284204}
   m_Layer: 5
   m_Name: Fact 1
   m_TagString: Untagged
@@ -55,6 +56,7 @@ GameObject:
   - 224: {fileID: 224000014108952578}
   - 222: {fileID: 222000011205164644}
   - 114: {fileID: 114000010532031336}
+  - 114: {fileID: 114000011000443672}
   m_Layer: 5
   m_Name: Fact 2
   m_TagString: Untagged
@@ -105,6 +107,7 @@ GameObject:
   - 224: {fileID: 224000011779883998}
   - 222: {fileID: 222000014131969620}
   - 114: {fileID: 114000012686966424}
+  - 114: {fileID: 114000011005197718}
   m_Layer: 5
   m_Name: Fact 3
   m_TagString: Untagged
@@ -122,6 +125,7 @@ GameObject:
   - 224: {fileID: 224000010995206134}
   - 222: {fileID: 222000012391220044}
   - 114: {fileID: 114000012003573872}
+  - 114: {fileID: 114000012703890212}
   m_Layer: 5
   m_Name: Text
   m_TagString: Untagged
@@ -139,6 +143,7 @@ GameObject:
   - 224: {fileID: 224000010943142848}
   - 222: {fileID: 222000012579263728}
   - 114: {fileID: 114000011104664060}
+  - 114: {fileID: 114000011398442248}
   m_Layer: 5
   m_Name: Fact 4
   m_TagString: Untagged
@@ -250,6 +255,34 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114000011000443672
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000011120329926}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &114000011005197718
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013505995394}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114000011104664060
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -328,6 +361,34 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   text: []
+--- !u!114 &114000011280284204
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000010559903980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
+--- !u!114 &114000011398442248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013864531980}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!114 &114000011614608604
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,7 +408,7 @@ MonoBehaviour:
       m_Calls: []
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
-  m_Sprite: {fileID: 21300000, guid: 106a81c3d4970564b8014d697f96dc1f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 639d676534a737b478d938d0d975df45, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -378,7 +439,7 @@ MonoBehaviour:
     m_Font: {fileID: 12800000, guid: 51a552dd20ca42d49a45c592dc2c7eec, type: 3}
     m_FontSize: 40
     m_FontStyle: 0
-    m_BestFit: 0
+    m_BestFit: 1
     m_MinSize: 2
     m_MaxSize: 80
     m_Alignment: 1
@@ -387,7 +448,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Welcome to the moon! Be careful not to land in the craters!
+  m_Text: 'Welcome to the Neptune!
+
+    A lot of Gluttony clouds are trying to crash you.'
 --- !u!114 &114000012686966424
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -421,6 +484,20 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Welcome to the moon! Be careful not to land in the craters!
+--- !u!114 &114000012703890212
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1000013812793588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -900027084, guid: f5f67c52d1564df4a8936ccd202a3bd8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_EffectColor: {r: 0, g: 0, b: 0, a: 1}
+  m_EffectDistance: {x: 1, y: -1}
+  m_UseGraphicAlpha: 1
 --- !u!222 &222000010262505834
 CanvasRenderer:
   m_ObjectHideFlags: 1
@@ -527,9 +604,9 @@ RectTransform:
   m_Father: {fileID: 224000010053312418}
   m_RootOrder: 3
   m_AnchorMin: {x: 0.4473955, y: 0.77500004}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -40, y: -27}
-  m_SizeDelta: {x: 11, y: -37}
+  m_AnchorMax: {x: 0.9677492, y: 0.94200003}
+  m_AnchoredPosition: {x: -9, y: 4}
+  m_SizeDelta: {x: 73, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224000011779883998
 RectTransform:

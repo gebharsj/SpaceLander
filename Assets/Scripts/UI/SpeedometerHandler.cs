@@ -7,9 +7,11 @@ public class SpeedometerHandler : MonoBehaviour {
     GameObject player;              //The player
     public Text speedText;
     Rigidbody2D shipRB;             //The RigidBody2D on the ship
+    GameObject needle;
 
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         player = GameObject.FindGameObjectWithTag("Player");
         if(player == null)
         {
@@ -23,7 +25,17 @@ public class SpeedometerHandler : MonoBehaviour {
         if(speedText == null)
         {
             Debug.LogError("SpeedText has not been set!");
-        }      
+        }
+
+        needle = transform.GetComponentInChildren<Image>().gameObject;
+        if (needle == null)
+        {
+            Debug.LogError("There is no needle set inside the holder.");
+        }
+        else
+        {
+            needle.transform.rotation = Quaternion.Euler(0, 0, 134); //makes it line up with the picture. Can change this if it doesn't line up correctly
+        }
 	}
 
     void FixedUpdate()

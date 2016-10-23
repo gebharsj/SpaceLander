@@ -46,6 +46,7 @@ public class Answered : MonoBehaviour {
             question.answeredButtons[i].SetActive(false);                   // Once answered, set the buttons for after are disabled.
         }
         gameObject.transform.parent.gameObject.SetActive(false);            // Set the Pop up inactive
+        PauseGame.popUpActivated = false;                                   // The pop-up is inactive
     }
 
     public void NextLevel() {

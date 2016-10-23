@@ -28,7 +28,7 @@ public class LandingDetection : MonoBehaviour {
 
             manager.platformPoints = other.GetComponent<PlatformManager>().pointValue; //sets the point value in the manager
             platformFinished = true;                    // If the platform has been landed on
-            platform = other.gameObject;                // Assign gameObject to a variable to bring to GUI method
+            manager.platform = other.gameObject;        // Assign gameObject to a variable to bring to GUI method
         }
     }
 
@@ -48,18 +48,8 @@ public class LandingDetection : MonoBehaviour {
                     print(other.name);
             }
 
-            //if (this.tag.Equals("Front"))               // figures out if it is the front or the back
                 manager.frontLanded = false;            //turns the bool off
-            //else
                 manager.endLanded = false;
-        }
-    }
-
-    void OnGUI()
-    {                                                      // Image can only be accessed through GUI
-        if (platformFinished)
-        {
-            platform.GetComponent<Image>().color = Color.red;           // Change the platform to red
         }
     }
 }

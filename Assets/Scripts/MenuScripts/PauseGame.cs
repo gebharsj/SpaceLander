@@ -8,7 +8,8 @@ public class PauseGame : MonoBehaviour {
     [Tooltip("The pause button")]
     public GameObject pauseButton;
 
-    bool paused = false;
+    static bool paused = false;
+    public static bool popUpActivated = false;
 
     void Start()
     {
@@ -23,23 +24,27 @@ public class PauseGame : MonoBehaviour {
         }
     }
 
-    bool TogglePause()                  //Sets the time scale to pause the game
+    void TogglePause()                  //Sets the time scale to pause the game
     {
-        if (Time.timeScale == 0) 
+        if (!popUpActivated)            //is the popup is not actived, work normally
         {
-            Time.timeScale = 1;         //unpauses game
-            return (false);
+            if (Time.timeScale == 0)
+            {
+                Time.timeScale = 1;         //unpauses game
+            }
+            else
+            {
+                Time.timeScale = 0;         //pauses game
+            }
         }
         else
-        {
-            Time.timeScale = 0;         //pauses game
-            return (true);
-        }
+            Time.timeScale = 0;         // don't unpause if the popup is up
     }
 
     public void ToggleMenu()            //Activates/deactivates UI elements based on whether or not the game is paused
     {
-        paused = TogglePause();
+        TogglePause();
+        paused = !paused;
         pauseButton.SetActive(!paused);
         pauseMenu.SetActive(paused);
     }

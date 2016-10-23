@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class LandingDetectionManager : MonoBehaviour
@@ -8,10 +9,10 @@ public class LandingDetectionManager : MonoBehaviour
     [Tooltip("Delay for the ship to reset after crashing.")]
     public float animationDelay;    //delay for animation to play
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool frontLanded;        //the bool connected with the front
 
-    //[HideInInspector]
+    [HideInInspector]
     public bool endLanded;          // the bool connected with the back
 
     public GameObject question;     // Needs to be public because inactive gameObjects cannot be "found"
@@ -22,6 +23,9 @@ public class LandingDetectionManager : MonoBehaviour
     public static bool hasFinished; //the activation of the win condition, prevents the effect of winning from happening multiple times
 
     private bool isDelayed;         //checking if delay is happening
+
+    [HideInInspector]
+    public GameObject platform;
 
     private void Start()
     {
@@ -42,9 +46,11 @@ public class LandingDetectionManager : MonoBehaviour
                 int fuelRemaining = (int) FuelConsumption.fuelAmount;                       // get points for fuel
                 PointsManager.AddPoints(fuelRemaining);                                     // add the remaining fuel
                 Time.timeScale = 0;                                                         // Stop time while question is being answered
+                PauseGame.popUpActivated = true;                                            // Popup Has Popped Up
                 question.SetActive(true);                                                   // Allow pop up to show
                 question.GetComponent<QuestionDisplay>().ApplyText();                       // Use the questions and answers from the txt file.
                 QPopUpManager.landingCount++;                                               // Keeps track of how many platforms you've landed on
+                platform.GetComponent<Image>().color = Color.red;                           // Change the platform to red
                 hasFinished = true;                                                         
             }
         }

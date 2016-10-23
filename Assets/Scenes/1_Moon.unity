@@ -4111,6 +4111,7 @@ MonoBehaviour:
   endLanded: 0
   question: {fileID: 1880335190}
   platformPoints: 0
+  platform: {fileID: 0}
 --- !u!114 &2046364746
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4123,7 +4124,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8fb423e044426434e90e37a506c78c42, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  horizontalSpeed: 0.5
+  horizontalSpeed: 2.5
   thrustPower: 1.2
 --- !u!222 &2046364747
 CanvasRenderer:
